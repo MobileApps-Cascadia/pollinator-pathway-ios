@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  PollinatorPathway
 //
-//  Created by Student Account on 4/17/22.
+//  Created by Shahin
 //
 
 import UIKit
