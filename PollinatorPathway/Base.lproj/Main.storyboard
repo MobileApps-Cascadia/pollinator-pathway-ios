@@ -15,6 +15,16 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="S8p-xD-2GW">
+                                <rect key="frame" x="164" y="190" width="21" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wJD-IG-5Hv">
+                                <rect key="frame" x="219" y="179" width="21" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -30,16 +40,44 @@
                     <view key="view" contentMode="scaleToFill" id="Cvc-wj-6Pi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xjn-ai-2mo">
+                                <rect key="frame" x="110" y="226" width="190" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229.5" id="YKg-I9-PM7"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyM-yW-JLT">
+                                <rect key="frame" x="128" y="563" width="155" height="55"/>
+                                <color key="backgroundColor" red="0.086274509803921567" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="Uod-Yy-5nA"/>
+                                </constraints>
+                                <color key="tintColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="SCAN QR CODE">
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ftH-N3-igG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ftH-N3-igG" firstAttribute="trailing" secondItem="xjn-ai-2mo" secondAttribute="trailing" constant="114" id="4ZT-c7-sXh"/>
+                            <constraint firstItem="iyM-yW-JLT" firstAttribute="leading" secondItem="ftH-N3-igG" secondAttribute="leading" constant="128" id="6yl-Wa-Y9L"/>
+                            <constraint firstItem="xjn-ai-2mo" firstAttribute="centerX" secondItem="iyM-yW-JLT" secondAttribute="centerX" id="D32-ss-p5P"/>
+                            <constraint firstItem="ftH-N3-igG" firstAttribute="bottom" secondItem="iyM-yW-JLT" secondAttribute="bottom" constant="244" id="q38-YB-V4x"/>
+                            <constraint firstItem="xjn-ai-2mo" firstAttribute="leading" secondItem="ftH-N3-igG" secondAttribute="leading" constant="110" id="rbu-Hf-dZ6"/>
+                            <constraint firstItem="xjn-ai-2mo" firstAttribute="top" secondItem="ftH-N3-igG" secondAttribute="top" constant="181.5" id="wbb-6p-Atq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fIV-Ng-rEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="664" y="-58"/>
+            <point key="canvasLocation" x="663.768115942029" y="-58.258928571428569"/>
         </scene>
     </scenes>
     <resources>
+        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
