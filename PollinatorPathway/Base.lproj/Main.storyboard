@@ -1,88 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5b-gq-tQy">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Existing Login-->
+        <scene sceneID="qWs-uI-RLQ">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="ClU-Tk-bSz" customClass="Existing_User_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="32N-NA-QLl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="g6g-H2-tYl"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Existing Login" image="person.fill" catalog="system" id="qKb-gU-KRq"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ouX-zC-IP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-26.086956521739133" y="-58.258928571428569"/>
+            <point key="canvasLocation" x="-370" y="56"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="pUf-Yp-e3X">
+        <!--New User Setup-->
+        <scene sceneID="a25-hh-KQO">
             <objects>
-                <viewController id="ilP-zb-YLy" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Cvc-wj-6Pi">
+                <viewController id="Ogt-g3-QAq" customClass="New_User_Setup_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oHE-k5-HSv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xjn-ai-2mo">
-                                <rect key="frame" x="38" y="182.5" width="338" height="411"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="338" id="EtM-o1-bvx"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="338" id="P5m-Ac-GrE"/>
-                                    <constraint firstAttribute="height" constant="412.5" id="Zsb-zw-CXd"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="412.5" id="bRr-7F-vU6"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyM-yW-JLT">
-                                <rect key="frame" x="38" y="695" width="338" height="28"/>
-                                <color key="backgroundColor" red="0.086274509803921567" green="0.5490196078431373" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="338" id="0PT-lD-1OG"/>
-                                    <constraint firstAttribute="height" constant="28" id="8sM-to-kyM"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="338" id="MwR-CZ-dn7"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="28" id="YED-Ho-AFD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="tintColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="SCAN QR CODE">
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ftH-N3-igG"/>
+                        <viewLayoutGuide key="safeArea" id="k5J-w4-NXj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ftH-N3-igG" firstAttribute="trailing" secondItem="xjn-ai-2mo" secondAttribute="trailing" constant="38" id="1yh-Ft-Yrj"/>
-                            <constraint firstItem="iyM-yW-JLT" firstAttribute="top" secondItem="xjn-ai-2mo" secondAttribute="bottom" constant="100.5" id="Af6-tU-sN4"/>
-                            <constraint firstItem="iyM-yW-JLT" firstAttribute="top" secondItem="xjn-ai-2mo" secondAttribute="bottom" constant="100.5" id="JHd-Uf-1b1"/>
-                            <constraint firstItem="ftH-N3-igG" firstAttribute="trailing" secondItem="iyM-yW-JLT" secondAttribute="trailing" constant="38" id="Kze-Tb-DTP"/>
-                            <constraint firstItem="xjn-ai-2mo" firstAttribute="leading" secondItem="ftH-N3-igG" secondAttribute="leading" constant="38" id="PXW-zy-Vl4"/>
-                            <constraint firstItem="iyM-yW-JLT" firstAttribute="leading" secondItem="ftH-N3-igG" secondAttribute="leading" constant="38" id="Ra6-uY-GRp"/>
-                            <constraint firstItem="ftH-N3-igG" firstAttribute="bottom" secondItem="iyM-yW-JLT" secondAttribute="bottom" constant="139" id="afN-ra-Wua"/>
-                            <constraint firstItem="xjn-ai-2mo" firstAttribute="top" secondItem="ftH-N3-igG" secondAttribute="top" constant="138" id="jdH-3G-bSQ"/>
-                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="New User Setup" image="qrcode" catalog="system" id="lyg-fW-zeJ" userLabel="New User Setup"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fIV-Ng-rEa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOg-EP-zQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663.768115942029" y="-58.258928571428569"/>
+            <point key="canvasLocation" x="-370" y="-551"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UVt-cr-IMj">
+            <objects>
+                <tabBarController id="M5b-gq-tQy" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4wC-0X-BUy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ogt-g3-QAq" kind="relationship" relationship="viewControllers" id="9Hb-vv-a7f"/>
+                        <segue destination="ClU-Tk-bSz" kind="relationship" relationship="viewControllers" id="PNu-Hp-SbR"/>
+                        <segue destination="f6z-bn-n1H" kind="relationship" relationship="viewControllers" id="6Py-ky-pLo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8t-4c-qxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1262" y="-248"/>
+        </scene>
+        <!--Live Map-->
+        <scene sceneID="X90-fn-HKB">
+            <objects>
+                <viewController id="f6z-bn-n1H" customClass="Live_Map_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EcY-zI-lg3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fes-wr-TGj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Live Map" image="map.fill" catalog="system" id="aSi-FX-2ec" userLabel="Live Map"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBJ-6c-SLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1016" y="490"/>
         </scene>
     </scenes>
     <resources>
-        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="map.fill" catalog="system" width="128" height="110"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="qrcode" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
