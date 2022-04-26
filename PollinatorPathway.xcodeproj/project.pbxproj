@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F941B09281740B100D9A8B2 /* Existing Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B08281740B100D9A8B2 /* Existing Login.swift */; };
-		3F941B0B281740BD00D9A8B2 /* Live Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B0A281740BC00D9A8B2 /* Live Map.swift */; };
-		3F941B0D281740DD00D9A8B2 /* New User Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B0C281740DD00D9A8B2 /* New User Setup.swift */; };
-		3F941B0F281750BD00D9A8B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B0E281750BD00D9A8B2 /* ContentView.swift */; };
+		3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B102818A00000D9A8B2 /* New User Setup VC.swift */; };
+		3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B122818A01C00D9A8B2 /* Existing User VC.swift */; };
+		3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B142818A02D00D9A8B2 /* Live Map VC.swift */; };
 		3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6446280CAD0100030ABD /* AppDelegate.swift */; };
 		3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6448280CAD0100030ABD /* SceneDelegate.swift */; };
-		3FFF644B280CAD0100030ABD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF644A280CAD0100030ABD /* ViewController.swift */; };
 		3FFF644E280CAD0100030ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF644C280CAD0100030ABD /* Main.storyboard */; };
 		3FFF6450280CAD0500030ABD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF644F280CAD0500030ABD /* Assets.xcassets */; };
 		3FFF6453280CAD0500030ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */; };
@@ -39,14 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F941B08281740B100D9A8B2 /* Existing Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Existing Login.swift"; sourceTree = "<group>"; };
-		3F941B0A281740BC00D9A8B2 /* Live Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map.swift"; sourceTree = "<group>"; };
-		3F941B0C281740DD00D9A8B2 /* New User Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New User Setup.swift"; sourceTree = "<group>"; };
-		3F941B0E281750BD00D9A8B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3F941B102818A00000D9A8B2 /* New User Setup VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New User Setup VC.swift"; sourceTree = "<group>"; };
+		3F941B122818A01C00D9A8B2 /* Existing User VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Existing User VC.swift"; sourceTree = "<group>"; };
+		3F941B142818A02D00D9A8B2 /* Live Map VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map VC.swift"; sourceTree = "<group>"; };
 		3FFF6443280CAD0100030ABD /* PollinatorPathway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollinatorPathway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF6446280CAD0100030ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFF6448280CAD0100030ABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FFF644A280CAD0100030ABD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FFF644D280CAD0100030ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FFF644F280CAD0500030ABD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FFF6452280CAD0500030ABD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,17 +80,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3F941B0528173FF900D9A8B2 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				3F941B0C281740DD00D9A8B2 /* New User Setup.swift */,
-				3F941B08281740B100D9A8B2 /* Existing Login.swift */,
-				3F941B0A281740BC00D9A8B2 /* Live Map.swift */,
-				3F941B0E281750BD00D9A8B2 /* ContentView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		3FFF643A280CAD0100030ABD = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +103,12 @@
 		3FFF6445280CAD0100030ABD /* PollinatorPathway */ = {
 			isa = PBXGroup;
 			children = (
-				3F941B0528173FF900D9A8B2 /* Views */,
 				3FFF6446280CAD0100030ABD /* AppDelegate.swift */,
 				3FFF6448280CAD0100030ABD /* SceneDelegate.swift */,
-				3FFF644A280CAD0100030ABD /* ViewController.swift */,
 				3FFF644C280CAD0100030ABD /* Main.storyboard */,
+				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
+				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
+				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
 				3FFF644F280CAD0500030ABD /* Assets.xcassets */,
 				3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */,
 				3FFF6454280CAD0500030ABD /* Info.plist */,
@@ -278,13 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FFF644B280CAD0100030ABD /* ViewController.swift in Sources */,
-				3F941B0D281740DD00D9A8B2 /* New User Setup.swift in Sources */,
-				3F941B0F281750BD00D9A8B2 /* ContentView.swift in Sources */,
-				3F941B09281740B100D9A8B2 /* Existing Login.swift in Sources */,
+				3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */,
 				3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */,
+				3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */,
 				3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */,
-				3F941B0B281740BD00D9A8B2 /* Live Map.swift in Sources */,
+				3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
