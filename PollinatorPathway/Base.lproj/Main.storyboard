@@ -223,8 +223,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ijg-pd-p14">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="773"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="J9V-md-SGg">
+                                        <rect key="frame" x="0.0" y="-8" width="320" height="790"/>
+                                    </stackView>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ve6-mk-sjh">
                                         <rect key="frame" x="24" y="33" width="206" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -244,9 +247,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http//:www.betterbuzz.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Okn-9l-hZQ">
+                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http//:www.betterbuzz.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Okn-9l-hZQ">
                                         <rect key="frame" x="24" y="133" width="226" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -274,9 +276,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="18345 Campus Way NE" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="818-NV-igO">
+                                    <textField opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="18345 Campus Way NE" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="818-NV-igO">
                                         <rect key="frame" x="24" y="384" width="177" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="address-line1"/>
                                     </textField>
@@ -286,8 +287,9 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-UX-78p">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbr-UX-78p">
                                         <rect key="frame" x="263" y="387" width="49" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </switch>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="GPS" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h8G-e6-DiG">
                                         <rect key="frame" x="24" y="472" width="60" height="34"/>
@@ -307,17 +309,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-Tt-WrK">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="D2Q-Tt-WrK">
                                         <rect key="frame" x="40" y="426" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.83921568627450982" green="0.95686274509803915" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstItem="UCM-9w-6X8" firstAttribute="trailing" secondItem="D2Q-Tt-WrK" secondAttribute="trailing" constant="40" id="ChS-yj-8y6"/>
-                                    <constraint firstItem="D2Q-Tt-WrK" firstAttribute="leading" secondItem="UCM-9w-6X8" secondAttribute="leading" constant="40" id="ThH-be-vpy"/>
-                                    <constraint firstItem="D2Q-Tt-WrK" firstAttribute="top" secondItem="sbr-UX-78p" secondAttribute="bottom" constant="8" id="dS0-Yy-aCl"/>
-                                    <constraint firstItem="UCM-9w-6X8" firstAttribute="bottom" secondItem="D2Q-Tt-WrK" secondAttribute="bottom" constant="14" id="vHf-VR-Uny"/>
+                                    <constraint firstItem="J9V-md-SGg" firstAttribute="top" secondItem="Okn-9l-hZQ" secondAttribute="bottom" id="2So-nH-NuP"/>
+                                    <constraint firstItem="818-NV-igO" firstAttribute="top" secondItem="J9V-md-SGg" secondAttribute="bottom" id="C4q-ZJ-cza"/>
+                                    <constraint firstItem="UCM-9w-6X8" firstAttribute="trailing" secondItem="J9V-md-SGg" secondAttribute="trailing" id="DhZ-XL-U55"/>
+                                    <constraint firstItem="J9V-md-SGg" firstAttribute="leading" secondItem="UCM-9w-6X8" secondAttribute="leading" id="WzL-MX-lMV"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="9JO-Z6-AGn"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="UCM-9w-6X8"/>
@@ -326,10 +329,10 @@
                         <viewLayoutGuide key="safeArea" id="bbZ-de-80v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ijg-pd-p14" firstAttribute="leading" secondItem="bbZ-de-80v" secondAttribute="leading" id="N3d-6e-aFU"/>
-                            <constraint firstItem="Ijg-pd-p14" firstAttribute="trailing" secondItem="bbZ-de-80v" secondAttribute="trailing" id="brD-G1-zFR"/>
-                            <constraint firstItem="Ijg-pd-p14" firstAttribute="top" secondItem="bbZ-de-80v" secondAttribute="top" id="kCC-N3-avs"/>
-                            <constraint firstItem="Ijg-pd-p14" firstAttribute="bottom" secondItem="bbZ-de-80v" secondAttribute="bottom" id="yjL-fp-Fzw"/>
+                            <constraint firstItem="Ijg-pd-p14" firstAttribute="leading" secondItem="bbZ-de-80v" secondAttribute="leading" id="BGW-Qe-wAB"/>
+                            <constraint firstAttribute="bottom" secondItem="Ijg-pd-p14" secondAttribute="bottom" id="e27-mQ-3qE"/>
+                            <constraint firstItem="Ijg-pd-p14" firstAttribute="top" secondItem="bbZ-de-80v" secondAttribute="top" id="uRS-QR-ixr"/>
+                            <constraint firstItem="Ijg-pd-p14" firstAttribute="trailing" secondItem="bbZ-de-80v" secondAttribute="trailing" id="yFW-ha-fmF"/>
                         </constraints>
                     </view>
                 </viewController>
