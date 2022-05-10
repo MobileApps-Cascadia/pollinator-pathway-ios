@@ -15,7 +15,7 @@ class Live_Map_VC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let initialLocation = CLLocation(latitude: 47.6062, longitude: 122.3321)
+        let initialLocation = CLLocation(latitude: 47.7590, longitude: -122.1907)
         mapView.centerToLocation(initialLocation)
         // Do any additional setup after loading the view.
     }
@@ -23,7 +23,7 @@ class Live_Map_VC: UIViewController {
     private extension MKMapView {
       func centerToLocation(
         _ location: CLLocation,
-        regionRadius: CLLocationDistance = 1000
+        regionRadius: CLLocationDistance = 6000
       ) {
         let coordinateRegion = MKCoordinateRegion(
           center: location.coordinate,

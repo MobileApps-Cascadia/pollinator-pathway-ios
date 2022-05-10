@@ -211,13 +211,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CSv-JP-9Oc">
-                                <rect key="frame" x="-7" y="0.0" width="327" height="519"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CSv-JP-9Oc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fes-wr-TGj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="top" secondItem="fes-wr-TGj" secondAttribute="top" id="EsW-dX-C4H"/>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="bottom" secondItem="fes-wr-TGj" secondAttribute="bottom" id="K1m-iH-gYt"/>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="centerX" secondItem="EcY-zI-lg3" secondAttribute="centerX" id="LJ2-2V-bmp"/>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="leading" secondItem="fes-wr-TGj" secondAttribute="leading" id="Svw-u8-Acv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Live Map" image="map.fill" catalog="system" id="aSi-FX-2ec" userLabel="Live Map"/>
                     <connections>
