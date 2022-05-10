@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5b-gq-tQy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5b-gq-tQy">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,7 +50,7 @@
                                                                     <constraint firstAttribute="width" constant="265" id="F5Z-S4-eej"/>
                                                                     <constraint firstAttribute="height" constant="40" id="v5e-0s-TrM"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0X-K8-a4v">
@@ -59,7 +59,7 @@
                                                                     <constraint firstAttribute="width" constant="74" id="Khw-Ur-zNk"/>
                                                                     <constraint firstAttribute="height" constant="21" id="UXg-gL-6zk"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -69,7 +69,7 @@
                                                                     <constraint firstAttribute="height" constant="40" id="eUx-wo-bdO"/>
                                                                     <constraint firstAttribute="width" constant="265" id="ype-aQ-i2b"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                         </subviews>
@@ -86,7 +86,9 @@
                                                                 </constraints>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Login">
+                                                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                                </buttonConfiguration>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0br-j4-vjk">
                                                                 <rect key="frame" x="0.0" y="43" width="262" height="35"/>
@@ -97,7 +99,7 @@
                                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="New User? Register Here" titleAlignment="center">
-                                                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                         </subviews>
@@ -146,6 +148,7 @@
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KCn-fX-LmV"/>
                                     <constraint firstAttribute="height" constant="30" id="jBU-7Z-RSH"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="SCAN QR CODE">
                                     <color key="titleColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -164,7 +167,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k5J-w4-NXj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.86292189360000005" green="0.95448559519999998" blue="0.87449979779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ioU-gh-n0S" firstAttribute="top" secondItem="W2W-rU-bT5" secondAttribute="bottom" constant="112.5" id="2e8-ZQ-H9E"/>
                             <constraint firstItem="k5J-w4-NXj" firstAttribute="trailing" secondItem="W2W-rU-bT5" secondAttribute="trailing" constant="47" id="4Ec-jP-OP4"/>
