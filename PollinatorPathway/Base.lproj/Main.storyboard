@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5b-gq-tQy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M5b-gq-tQy">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -50,7 +50,7 @@
                                                                     <constraint firstAttribute="width" constant="265" id="F5Z-S4-eej"/>
                                                                     <constraint firstAttribute="height" constant="40" id="v5e-0s-TrM"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0X-K8-a4v">
@@ -59,7 +59,7 @@
                                                                     <constraint firstAttribute="width" constant="74" id="Khw-Ur-zNk"/>
                                                                     <constraint firstAttribute="height" constant="21" id="UXg-gL-6zk"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -69,7 +69,7 @@
                                                                     <constraint firstAttribute="height" constant="40" id="eUx-wo-bdO"/>
                                                                     <constraint firstAttribute="width" constant="265" id="ype-aQ-i2b"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                             </textField>
                                                         </subviews>
@@ -86,9 +86,7 @@
                                                                 </constraints>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="LOGIN">
-                                                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
-                                                                </buttonConfiguration>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Login"/>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0br-j4-vjk">
                                                                 <rect key="frame" x="0.0" y="43" width="262" height="35"/>
@@ -99,7 +97,7 @@
                                                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="New User? Register Here" titleAlignment="center">
-                                                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                                                    <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                                                 </buttonConfiguration>
                                                             </button>
                                                         </subviews>
@@ -139,46 +137,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="1nA-Sp-vmx">
-                                <rect key="frame" x="1" y="0.0" width="319" height="423.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W2W-rU-bT5">
-                                        <rect key="frame" x="0.0" y="0.5" width="319" height="363"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="319" id="1Lw-jR-7er"/>
-                                            <constraint firstAttribute="height" constant="364.5" id="W3P-ON-tz1"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioU-gh-n0S">
-                                        <rect key="frame" x="0.0" y="393.5" width="319" height="30"/>
-                                        <color key="backgroundColor" red="0.086274509799999996" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="Fks-ss-duF"/>
-                                            <constraint firstAttribute="width" constant="319" id="HcZ-sC-Q1Y"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KCn-fX-LmV"/>
-                                            <constraint firstAttribute="height" constant="30" id="jBU-7Z-RSH"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
-                                        <state key="normal" title="SCAN QR CODE">
-                                            <color key="titleColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioU-gh-n0S">
+                                <rect key="frame" x="51" y="277" width="225" height="30"/>
+                                <color key="backgroundColor" red="0.086274509799999996" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="Fks-ss-duF"/>
+                                    <constraint firstAttribute="width" constant="319" id="HcZ-sC-Q1Y"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KCn-fX-LmV"/>
+                                    <constraint firstAttribute="height" constant="30" id="jBU-7Z-RSH"/>
+                                </constraints>
+                                <state key="normal" title="SCAN QR CODE">
+                                    <color key="titleColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" ambiguous="YES" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W2W-rU-bT5">
+                                <rect key="frame" x="48" y="138.5" width="225" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="319" id="1Lw-jR-7er"/>
+                                    <constraint firstAttribute="height" constant="364.5" id="W3P-ON-tz1"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k5J-w4-NXj"/>
-                        <color key="backgroundColor" red="0.86292189360000005" green="0.95448559519999998" blue="0.87449979779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ioU-gh-n0S" firstAttribute="top" secondItem="W2W-rU-bT5" secondAttribute="bottom" constant="112.5" id="2e8-ZQ-H9E"/>
+                            <constraint firstItem="k5J-w4-NXj" firstAttribute="trailing" secondItem="W2W-rU-bT5" secondAttribute="trailing" constant="47" id="4Ec-jP-OP4"/>
+                            <constraint firstItem="k5J-w4-NXj" firstAttribute="trailing" secondItem="ioU-gh-n0S" secondAttribute="trailing" constant="44" id="Gzj-KF-B07"/>
+                            <constraint firstItem="ioU-gh-n0S" firstAttribute="leading" secondItem="k5J-w4-NXj" secondAttribute="leading" constant="51" id="OtZ-cA-J7a"/>
+                            <constraint firstItem="W2W-rU-bT5" firstAttribute="top" secondItem="k5J-w4-NXj" secondAttribute="top" constant="138" id="Zvm-jy-487"/>
+                            <constraint firstItem="W2W-rU-bT5" firstAttribute="leading" secondItem="k5J-w4-NXj" secondAttribute="leading" constant="48" id="b8s-AQ-4vH"/>
+                            <constraint firstItem="k5J-w4-NXj" firstAttribute="bottom" secondItem="ioU-gh-n0S" secondAttribute="bottom" constant="124" id="g9W-Ri-QWe"/>
+                            <constraint firstItem="k5J-w4-NXj" firstAttribute="trailing" secondItem="ioU-gh-n0S" secondAttribute="trailing" constant="44" id="lQ4-X7-XqM"/>
+                            <constraint firstItem="k5J-w4-NXj" firstAttribute="bottom" secondItem="ioU-gh-n0S" secondAttribute="bottom" constant="124" id="mBT-1h-vXh"/>
+                            <constraint firstItem="ioU-gh-n0S" firstAttribute="leading" secondItem="k5J-w4-NXj" secondAttribute="leading" constant="51" id="sxp-B0-TDM"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New User Setup" image="qrcode" catalog="system" id="lyg-fW-zeJ" userLabel="New User Setup"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOg-EP-zQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-371.25" y="-551.4084507042254"/>
+            <point key="canvasLocation" x="-371.01449275362324" y="-551.11607142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UVt-cr-IMj">
@@ -187,7 +191,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4wC-0X-BUy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Ogt-g3-QAq" kind="relationship" relationship="viewControllers" id="9Hb-vv-a7f"/>
@@ -203,17 +207,31 @@
         <scene sceneID="X90-fn-HKB">
             <objects>
                 <viewController id="f6z-bn-n1H" customClass="Live_Map_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="EcY-zI-lg3">
+                    <view key="view" contentMode="scaleToFill" id="EcY-zI-lg3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CSv-JP-9Oc">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="fes-wr-TGj"/>
-                        <color key="backgroundColor" red="0.86292189360000005" green="0.95448559519999998" blue="0.87449979779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="top" secondItem="fes-wr-TGj" secondAttribute="top" id="EsW-dX-C4H"/>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="bottom" secondItem="fes-wr-TGj" secondAttribute="bottom" id="K1m-iH-gYt"/>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="centerX" secondItem="EcY-zI-lg3" secondAttribute="centerX" id="LJ2-2V-bmp"/>
+                            <constraint firstItem="CSv-JP-9Oc" firstAttribute="leading" secondItem="fes-wr-TGj" secondAttribute="leading" id="Svw-u8-Acv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Live Map" image="map.fill" catalog="system" id="aSi-FX-2ec" userLabel="Live Map"/>
+                    <connections>
+                        <outlet property="mapView" destination="CSv-JP-9Oc" id="ytk-50-FH4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBJ-6c-SLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1016" y="490"/>
+            <point key="canvasLocation" x="-1016.25" y="489.08450704225351"/>
         </scene>
     </scenes>
     <resources>
