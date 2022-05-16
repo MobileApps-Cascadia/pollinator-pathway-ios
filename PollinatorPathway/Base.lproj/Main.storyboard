@@ -84,7 +84,7 @@
                                                                     <constraint firstAttribute="height" constant="35" id="sxc-bb-LhO"/>
                                                                 </constraints>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="Button"/>
+                                                                <state key="normal" title="SUBMIT"/>
                                                                 <connections>
                                                                     <segue destination="iHM-pa-f8A" kind="showDetail" id="xJK-j2-cI7"/>
                                                                 </connections>
