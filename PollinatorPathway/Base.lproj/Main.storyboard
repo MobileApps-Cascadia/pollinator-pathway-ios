@@ -236,6 +236,21 @@
             </objects>
             <point key="canvasLocation" x="-1016.25" y="489.08450704225351"/>
         </scene>
+        <!--ProfileVC-->
+        <scene sceneID="7oS-G6-onz">
+            <objects>
+                <viewController storyboardIdentifier="Profile View Controller" id="UcM-YA-mNN" customClass="ProfileVC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q79-fq-Km2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eu6-RH-t9r"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wiy-yT-gwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="338" y="55"/>
+        </scene>
     </scenes>
     <resources>
         <image name="map.fill" catalog="system" width="128" height="110"/>

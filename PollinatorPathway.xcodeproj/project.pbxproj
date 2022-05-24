@@ -10,6 +10,7 @@
 		3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B102818A00000D9A8B2 /* New User Setup VC.swift */; };
 		3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B122818A01C00D9A8B2 /* Existing User VC.swift */; };
 		3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B142818A02D00D9A8B2 /* Live Map VC.swift */; };
+		3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC4A44283DA01200404C2E /* Profile VC.swift */; };
 		3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6446280CAD0100030ABD /* AppDelegate.swift */; };
 		3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6448280CAD0100030ABD /* SceneDelegate.swift */; };
 		3FFF644E280CAD0100030ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF644C280CAD0100030ABD /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		3F941B102818A00000D9A8B2 /* New User Setup VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New User Setup VC.swift"; sourceTree = "<group>"; };
 		3F941B122818A01C00D9A8B2 /* Existing User VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Existing User VC.swift"; sourceTree = "<group>"; };
 		3F941B142818A02D00D9A8B2 /* Live Map VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map VC.swift"; sourceTree = "<group>"; };
+		3FAC4A44283DA01200404C2E /* Profile VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile VC.swift"; sourceTree = "<group>"; };
 		3FFF6443280CAD0100030ABD /* PollinatorPathway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollinatorPathway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF6446280CAD0100030ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFF6448280CAD0100030ABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
 				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
 				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
+				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
 				3FFF644F280CAD0500030ABD /* Assets.xcassets */,
 				3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */,
 				3FFF6454280CAD0500030ABD /* Info.plist */,
@@ -269,6 +272,7 @@
 				3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */,
 				3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */,
 				3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */,
+				3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
