@@ -25,7 +25,7 @@ class ProfileVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
     let devCourses = [("Herbal Gerbil"),("Spriral Herb Garden"),("Vegetable Garden")]
 
-    let devCousesImages = [UIImage(named: "bee2_1"), UIImage(named: "bee2_2"), UIImage(named: "bee2_3")]
+    let devCousesImages = [UIImage(named: "bee2_1"), UIImage(named: "bee2_2"), UIImage(named: "butterfly3_2")]
 
     override func viewDidLoad() {
 
