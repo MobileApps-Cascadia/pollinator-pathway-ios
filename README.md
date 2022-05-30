@@ -85,19 +85,6 @@
 ## Walk through
 * "High Fidelity Prototype" - https://www.figma.com/file/k91nrq7O2EDauWD3BhyXrk/final-Prototype?node-id=0%3A1 
 
-## Screens
-Registering a New Site
-
-<a href="https://lh3.googleusercontent.com/a1Uk-cxkpgSspQjq4dgVnLAX4TBjksfWDF21K9Q_aUGd4uhCqTcxrWfyybC0iZtyLKLK54cnHWHa628v2JL8-_xsDvj-GDyF3EdXaGvnhMwGIxxkSWpDEOXpTPC-_-uXGiWTGSdjIA=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/a1Uk-cxkpgSspQjq4dgVnLAX4TBjksfWDF21K9Q_aUGd4uhCqTcxrWfyybC0iZtyLKLK54cnHWHa628v2JL8-_xsDvj-GDyF3EdXaGvnhMwGIxxkSWpDEOXpTPC-_-uXGiWTGSdjIA=w440-h159-p-k" /> </a>
-
-Editing Site Information
-
-<a href="https://lh3.googleusercontent.com/KoZkGVl0fIQXEcxW_YjDQdkx52lPHzZPJ76byvih8Y2PotFZgRpCJG7SrCOhMAcvEc3Mzv4G-j-E9r5-Uycaqr7w1lvcsXoYIIDOPNGEnBKxJ4iJ4USMCX8oa_jgijSxa4m_RoEu5Q=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/KoZkGVl0fIQXEcxW_YjDQdkx52lPHzZPJ76byvih8Y2PotFZgRpCJG7SrCOhMAcvEc3Mzv4G-j-E9r5-Uycaqr7w1lvcsXoYIIDOPNGEnBKxJ4iJ4USMCX8oa_jgijSxa4m_RoEu5Q=w576-h159-p-k" /> </a>
-
-Viewing Other Sites
-
-<a href="https://lh3.googleusercontent.com/j_7GAR8yzdN2gE2J2eMibAEdHYEVJ3VH2qBaVACM9QN-C3cabBtU_eWT-xva_2-ZuG29wUTisKVfA9aHV0IkpNdno7S-7GqdQVHN1-CrESmLHOpq_sW13F7102QHKXQ-nSHi-irIcQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/j_7GAR8yzdN2gE2J2eMibAEdHYEVJ3VH2qBaVACM9QN-C3cabBtU_eWT-xva_2-ZuG29wUTisKVfA9aHV0IkpNdno7S-7GqdQVHN1-CrESmLHOpq_sW13F7102QHKXQ-nSHi-irIcQ=w188-h159-p-k" /> </a>
-
 ## Color
 * Primary color:#168C8C
 
