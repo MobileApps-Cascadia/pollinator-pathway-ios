@@ -120,7 +120,7 @@ Logo - Splash Screen:
 
  Icon - App Store:
 
-<a href="https://lh3.googleusercontent.com/G0FTQndTDx8a44fCmWSDBvDTM-813pNssDI3rvL87XS-zv9SI2FsQhZWJi6E34qWvJoeaPDTzYD29uP2ohfkdtabKQ15IRWo6nmh0c8K5FG7bNuauEpQMNIXgJyNaMDdt05V5vHPAQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/G0FTQndTDx8a44fCmWSDBvDTM-813pNssDI3rvL87XS-zv9SI2FsQhZWJi6E34qWvJoeaPDTzYD29uP2ohfkdtabKQ15IRWo6nmh0c8K5FG7bNuauEpQMNIXgJyNaMDdt05V5vHPAQ=w600-h315-p-k" /> </a>
+<a href="https://photos.google.com/photo/AF1QipOBN3YdhJpZmTUwq6REyfn16P9r7jy3-zV5iQLq"> <img src="https://photos.google.com/photo/AF1QipOBN3YdhJpZmTUwq6REyfn16P9r7jy3-zV5iQLq" /> </a>
 
 ## Integration
 
