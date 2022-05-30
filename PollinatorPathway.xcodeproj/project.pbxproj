@@ -19,6 +19,8 @@
 		3FAC4A52283DA54600404C2E /* bee2_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4A4B283DA54600404C2E /* bee2_2.png */; };
 		3FAC4A53283DA54600404C2E /* butterfly3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4A4C283DA54600404C2E /* butterfly3_2.png */; };
 		3FAC4AC8284558FB00404C2E /* PlantingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */; };
+		3FAC4ACB284560A100404C2E /* bee2_3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4AC9284560A000404C2E /* bee2_3.PNG */; };
+		3FAC4ACC284560A100404C2E /* bee2_1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4ACA284560A100404C2E /* bee2_1.PNG */; };
 		3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6446280CAD0100030ABD /* AppDelegate.swift */; };
 		3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6448280CAD0100030ABD /* SceneDelegate.swift */; };
 		3FFF644E280CAD0100030ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF644C280CAD0100030ABD /* Main.storyboard */; };
@@ -58,6 +60,8 @@
 		3FAC4A4B283DA54600404C2E /* bee2_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bee2_2.png; sourceTree = "<group>"; };
 		3FAC4A4C283DA54600404C2E /* butterfly3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly3_2.png; sourceTree = "<group>"; };
 		3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantingsTableViewCell.swift; sourceTree = "<group>"; };
+		3FAC4AC9284560A000404C2E /* bee2_3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bee2_3.PNG; sourceTree = "<group>"; };
+		3FAC4ACA284560A100404C2E /* bee2_1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bee2_1.PNG; sourceTree = "<group>"; };
 		3FFF6443280CAD0100030ABD /* PollinatorPathway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollinatorPathway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF6446280CAD0100030ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFF6448280CAD0100030ABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
 				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
 				3FFF644F280CAD0500030ABD /* Assets.xcassets */,
+				3FAC4ACA284560A100404C2E /* bee2_1.PNG */,
+				3FAC4AC9284560A000404C2E /* bee2_3.PNG */,
 				3FAC4A4A283DA54600404C2E /* bee1_2.png */,
 				3FAC4A4B283DA54600404C2E /* bee2_2.png */,
 				3FAC4A46283DA54600404C2E /* bee3_2.png */,
@@ -270,10 +276,12 @@
 				3FAC4A51283DA54600404C2E /* bee1_2.png in Resources */,
 				3FAC4A53283DA54600404C2E /* butterfly3_2.png in Resources */,
 				3FAC4A4F283DA54600404C2E /* bee4_2png.png in Resources */,
+				3FAC4ACB284560A100404C2E /* bee2_3.PNG in Resources */,
 				3FAC4A52283DA54600404C2E /* bee2_2.png in Resources */,
 				3FFF6450280CAD0500030ABD /* Assets.xcassets in Resources */,
 				3FFF644E280CAD0100030ABD /* Main.storyboard in Resources */,
 				3FAC4A4E283DA54600404C2E /* butterfly1_2.png in Resources */,
+				3FAC4ACC284560A100404C2E /* bee2_1.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

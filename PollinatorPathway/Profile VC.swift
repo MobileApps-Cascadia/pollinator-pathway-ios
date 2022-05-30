@@ -10,7 +10,9 @@ import UIKit
 class ProfileVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell=tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as! PlantingsTableViewCell
-    
+    let courseTitle = devCourses[indexPath .row]
+        _ = devCousesImages[indexPath .row]
+    cell.label.text=courseTitle
     cell.photo.image=self.devCousesImages[indexPath .row]
 
     return cell
@@ -21,9 +23,9 @@ class ProfileVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
 
 
-    let devCourses = [("Herbal Gerbil"),("Spriral Herb Garden"),("Permaculture Vegetable Garden")]
+    let devCourses = [("Herbal Gerbil"),("Spriral Herb Garden"),("Vegetable Garden")]
 
-    let devCousesImages = [UIImage(named: "bee1_2"), UIImage(named: "bee2_2"), UIImage(named: "butterfly1_2")]
+    let devCousesImages = [UIImage(named: "bee2_1"), UIImage(named: "bee2_2"), UIImage(named: "bee2_3")]
 
     override func viewDidLoad() {
 
