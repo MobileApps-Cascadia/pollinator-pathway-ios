@@ -313,51 +313,64 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CjF-Hg-Dsv">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="CjF-Hg-Dsv">
                                                 <rect key="frame" x="42" y="489" width="240" height="34"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="KBY-eu-cmO">
-                                                        <rect key="frame" x="0.0" y="44.5" width="240" height="43.5"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KBY-eu-cmO" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="49.5" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KBY-eu-cmO" id="pWw-3v-ZxI">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-Cs-mtg">
+                                                                    <rect key="frame" x="0.0" y="-43" width="56" height="128"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIk-eU-AMi">
+                                                                    <rect key="frame" x="119" y="18" width="42" height="21"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="label" destination="bIk-eU-AMi" id="22F-x8-d2p"/>
+                                                            <outlet property="photo" destination="bmT-Cs-mtg" id="jTM-3I-Ih8"/>
+                                                        </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GQV-xD-c6x">
-                                                        <rect key="frame" x="0.0" y="88" width="240" height="44"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GQV-xD-c6x" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="93" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQV-xD-c6x" id="UCV-kg-lrV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OiF-u4-8Q4">
-                                                        <rect key="frame" x="0.0" y="132" width="240" height="44"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OiF-u4-8Q4" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="136.5" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OiF-u4-8Q4" id="Djm-tH-0TX">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bqA-Ll-VKD">
-                                                        <rect key="frame" x="0.0" y="176" width="240" height="44"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bqA-Ll-VKD" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="180" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bqA-Ll-VKD" id="1iU-MI-Akz">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                        </tableViewCellContentView>
-                                                    </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HDd-es-8q5">
-                                                        <rect key="frame" x="0.0" y="220" width="240" height="43.5"/>
-                                                        <autoresizingMask key="autoresizingMask"/>
-                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HDd-es-8q5" id="rEX-rV-EaG">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                 </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="UcM-YA-mNN" id="Bfb-T2-zdq"/>
+                                                    <outlet property="delegate" destination="UcM-YA-mNN" id="8Zp-Zg-EBw"/>
+                                                </connections>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.80861163140000003" green="0.96225172280000004" blue="0.86273461579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -438,7 +451,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="338" y="55"/>
+            <point key="canvasLocation" x="337.5" y="54.929577464788736"/>
         </scene>
     </scenes>
     <resources>
