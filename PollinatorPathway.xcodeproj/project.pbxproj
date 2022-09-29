@@ -26,6 +26,7 @@
 		3FFF6453280CAD0500030ABD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */; };
 		3FFF645E280CAD0600030ABD /* PollinatorPathwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF645D280CAD0600030ABD /* PollinatorPathwayTests.swift */; };
 		3FFF6469280CAD0600030ABD /* PollinatorPathwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6468280CAD0600030ABD /* PollinatorPathwayUITests.swift */; };
+		442ECECB28E63B8C00869252 /* Planting VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442ECECA28E63B8C00869252 /* Planting VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		3FFF6464280CAD0600030ABD /* PollinatorPathwayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollinatorPathwayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF6468280CAD0600030ABD /* PollinatorPathwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollinatorPathwayUITests.swift; sourceTree = "<group>"; };
 		3FFF646A280CAD0600030ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442ECECA28E63B8C00869252 /* Planting VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planting VC.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
 				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
 				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
+				442ECECA28E63B8C00869252 /* Planting VC.swift */,
 				3FFF644F280CAD0500030ABD /* Assets.xcassets */,
 				3FAC4ACF284562B300404C2E /* bee2_1.png */,
 				3FAC4ACE284562B300404C2E /* bee2_2.png */,
@@ -300,6 +303,7 @@
 			files = (
 				3FAC4AC8284558FB00404C2E /* PlantingsTableViewCell.swift in Sources */,
 				3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */,
+				442ECECB28E63B8C00869252 /* Planting VC.swift in Sources */,
 				3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */,
 				3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */,
 				3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */,
