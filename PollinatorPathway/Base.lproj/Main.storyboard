@@ -318,10 +318,10 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KBY-eu-cmO" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="55.5" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="55.5" width="240" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KBY-eu-cmO" id="pWw-3v-ZxI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-Cs-mtg">
@@ -352,15 +352,15 @@
                                                         </connections>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GQV-xD-c6x" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="99" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="99.5" width="240" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQV-xD-c6x" id="UCV-kg-lrV">
-                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OiF-u4-8Q4" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="142.5" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="143.5" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OiF-u4-8Q4" id="Djm-tH-0TX">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
@@ -368,7 +368,7 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bqA-Ll-VKD" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="186" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="187" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bqA-Ll-VKD" id="1iU-MI-Akz">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
@@ -382,7 +382,7 @@
                                                 </connections>
                                             </tableView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.80861163140000003" green="0.96225172280000004" blue="0.86273461579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.76855570080000002" green="0.96800094839999995" blue="0.85586351159999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="CjF-Hg-Dsv" secondAttribute="trailing" constant="38" id="05f-i3-BKa"/>
                                             <constraint firstItem="zSi-92-as9" firstAttribute="trailing" secondItem="NQd-M5-f65" secondAttribute="trailing" id="0pj-Tb-PnW"/>
@@ -460,7 +460,7 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="337.5" y="54.929577464788736"/>
+            <point key="canvasLocation" x="379" y="55"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="y87-ld-YdV">
@@ -483,16 +483,21 @@
                                 <rect key="frame" x="127" y="485" width="67" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Close"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.19338598849999999" green="0.55024230480000003" blue="0.54698139430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WbV-qH-ITl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.76855570080000002" green="0.96800094839999995" blue="0.85586351159999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYM-PG-ztT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="55"/>
+            <point key="canvasLocation" x="1100.625" y="54.929577464788736"/>
         </scene>
     </scenes>
     <resources>
