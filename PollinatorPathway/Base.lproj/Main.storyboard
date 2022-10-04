@@ -462,37 +462,89 @@
             </objects>
             <point key="canvasLocation" x="379" y="55"/>
         </scene>
-        <!--View Controller-->
+        <!--PlantingVC-->
         <scene sceneID="y87-ld-YdV">
             <objects>
-                <viewController id="12p-Er-xzv" sceneMemberID="viewController">
+                <viewController id="12p-Er-xzv" customClass="Planting_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CQO-f9-zgv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-QP-xdf">
-                                <rect key="frame" x="40" y="92" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5f-JL-z60">
-                                <rect key="frame" x="127" y="485" width="67" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Close">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.19338598849999999" green="0.55024230480000003" blue="0.54698139430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aY0-UY-yXq">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Planting Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5II-Ac-EgD">
+                                        <rect key="frame" x="62" y="52" width="196" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Planting Description" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-QP-xdf">
+                                        <rect key="frame" x="40" y="153" width="240" height="128"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VMz-IL-ahf">
+                                        <rect key="frame" x="21" y="324" width="129" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="uR7-LG-qwl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-IQ-M3q">
+                                        <rect key="frame" x="176" y="324" width="126" height="110"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="126" id="8AA-zp-51i"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5f-JL-z60">
+                                        <rect key="frame" x="126" y="495" width="68" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Close">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.19338598849999999" green="0.55024230480000003" blue="0.54698139430000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="close" destination="12p-Er-xzv" eventType="touchUpInside" id="4VY-5j-abg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="W5f-JL-z60" firstAttribute="leading" secondItem="4Q2-j5-ofe" secondAttribute="leading" constant="126" id="10m-fD-IL1"/>
+                                    <constraint firstAttribute="trailing" secondItem="GIn-IQ-M3q" secondAttribute="trailing" constant="18" id="3NE-JG-Kmd"/>
+                                    <constraint firstItem="W8w-QP-xdf" firstAttribute="top" secondItem="5II-Ac-EgD" secondAttribute="bottom" constant="67" id="4AY-1u-qD2"/>
+                                    <constraint firstItem="W8w-QP-xdf" firstAttribute="top" secondItem="5II-Ac-EgD" secondAttribute="bottom" constant="67" id="4OQ-LR-x0O"/>
+                                    <constraint firstItem="W8w-QP-xdf" firstAttribute="leading" secondItem="4Q2-j5-ofe" secondAttribute="leading" constant="40" id="4cD-HF-cs5"/>
+                                    <constraint firstItem="4Q2-j5-ofe" firstAttribute="trailing" secondItem="5II-Ac-EgD" secondAttribute="trailing" constant="62" id="4dN-pd-rdT"/>
+                                    <constraint firstItem="VMz-IL-ahf" firstAttribute="top" secondItem="W8w-QP-xdf" secondAttribute="bottom" constant="43" id="55n-bh-85R"/>
+                                    <constraint firstItem="4Q2-j5-ofe" firstAttribute="trailing" secondItem="W8w-QP-xdf" secondAttribute="trailing" constant="40" id="NaL-eE-Qat"/>
+                                    <constraint firstItem="VMz-IL-ahf" firstAttribute="top" secondItem="W8w-QP-xdf" secondAttribute="bottom" constant="43" id="Nkc-lF-ixd"/>
+                                    <constraint firstItem="4Q2-j5-ofe" firstAttribute="trailing" secondItem="W5f-JL-z60" secondAttribute="trailing" constant="126" id="Og2-tQ-tcZ"/>
+                                    <constraint firstItem="GIn-IQ-M3q" firstAttribute="leading" secondItem="VMz-IL-ahf" secondAttribute="trailing" constant="26" id="Ut6-9b-h0a"/>
+                                    <constraint firstItem="4Q2-j5-ofe" firstAttribute="trailing" secondItem="GIn-IQ-M3q" secondAttribute="trailing" constant="18" id="aap-xI-8Ih"/>
+                                    <constraint firstItem="5II-Ac-EgD" firstAttribute="top" secondItem="4Q2-j5-ofe" secondAttribute="top" constant="52" id="bX0-n8-WS3"/>
+                                    <constraint firstItem="VMz-IL-ahf" firstAttribute="leading" secondItem="4Q2-j5-ofe" secondAttribute="leading" constant="21" id="kKP-yw-b5l"/>
+                                    <constraint firstItem="VMz-IL-ahf" firstAttribute="bottom" secondItem="GIn-IQ-M3q" secondAttribute="bottom" id="lzT-MC-t9T"/>
+                                    <constraint firstItem="GIn-IQ-M3q" firstAttribute="top" secondItem="W8w-QP-xdf" secondAttribute="bottom" constant="43" id="m4c-Yg-7nE"/>
+                                    <constraint firstItem="VMz-IL-ahf" firstAttribute="top" secondItem="aY0-UY-yXq" secondAttribute="top" constant="324" id="ntO-HE-Rgl"/>
+                                    <constraint firstAttribute="bottom" secondItem="VMz-IL-ahf" secondAttribute="bottom" constant="114" id="pua-g8-ici"/>
+                                    <constraint firstItem="5II-Ac-EgD" firstAttribute="leading" secondItem="4Q2-j5-ofe" secondAttribute="leading" constant="62" id="qT4-Zv-KcO"/>
+                                    <constraint firstItem="4Q2-j5-ofe" firstAttribute="bottom" secondItem="W5f-JL-z60" secondAttribute="bottom" constant="18.5" id="xeb-fx-Qgz"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="sxC-LO-xyc"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="4Q2-j5-ofe"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WbV-qH-ITl"/>
                         <color key="backgroundColor" red="0.76855570080000002" green="0.96800094839999995" blue="0.85586351159999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aY0-UY-yXq" firstAttribute="trailing" secondItem="WbV-qH-ITl" secondAttribute="trailing" id="Olg-qZ-qW0"/>
+                            <constraint firstItem="aY0-UY-yXq" firstAttribute="leading" secondItem="WbV-qH-ITl" secondAttribute="leading" id="gP3-2O-UQs"/>
+                            <constraint firstItem="aY0-UY-yXq" firstAttribute="bottom" secondItem="WbV-qH-ITl" secondAttribute="bottom" id="rw9-4i-poI"/>
+                            <constraint firstItem="aY0-UY-yXq" firstAttribute="top" secondItem="WbV-qH-ITl" secondAttribute="top" id="xqF-hi-9KR"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYM-PG-ztT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
