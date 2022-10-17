@@ -12,7 +12,6 @@
 		3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B142818A02D00D9A8B2 /* Live Map VC.swift */; };
 		3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC4A44283DA01200404C2E /* Profile VC.swift */; };
 		3FAC4A4E283DA54600404C2E /* butterfly1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4A47283DA54600404C2E /* butterfly1_2.png */; };
-		3FAC4A4F283DA54600404C2E /* bee4_2png.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4A48283DA54600404C2E /* bee4_2png.png */; };
 		3FAC4A53283DA54600404C2E /* butterfly3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4A4C283DA54600404C2E /* butterfly3_2.png */; };
 		3FAC4AC8284558FB00404C2E /* PlantingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */; };
 		3FAC4AD0284562B300404C2E /* bee2_3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 3FAC4ACD284562B300404C2E /* bee2_3.PNG */; };
@@ -27,6 +26,10 @@
 		3FFF645E280CAD0600030ABD /* PollinatorPathwayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF645D280CAD0600030ABD /* PollinatorPathwayTests.swift */; };
 		3FFF6469280CAD0600030ABD /* PollinatorPathwayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6468280CAD0600030ABD /* PollinatorPathwayUITests.swift */; };
 		442ECECB28E63B8C00869252 /* Planting VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442ECECA28E63B8C00869252 /* Planting VC.swift */; };
+		44D6871928FDD09000A669C5 /* bee2_1.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 44D6871828FDD09000A669C5 /* bee2_1.PNG */; };
+		44D6871B28FDD0A100A669C5 /* bee2_3.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 44D6871A28FDD0A100A669C5 /* bee2_3.PNG */; };
+		44D6871D28FDD0AE00A669C5 /* hummingbird1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6871C28FDD0AE00A669C5 /* hummingbird1_2.png */; };
+		44D6871F28FDD0D600A669C5 /* bee3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6871E28FDD0D600A669C5 /* bee3_2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,6 @@
 		3F941B142818A02D00D9A8B2 /* Live Map VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map VC.swift"; sourceTree = "<group>"; };
 		3FAC4A44283DA01200404C2E /* Profile VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile VC.swift"; sourceTree = "<group>"; };
 		3FAC4A47283DA54600404C2E /* butterfly1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly1_2.png; sourceTree = "<group>"; };
-		3FAC4A48283DA54600404C2E /* bee4_2png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bee4_2png.png; sourceTree = "<group>"; };
 		3FAC4A4C283DA54600404C2E /* butterfly3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly3_2.png; sourceTree = "<group>"; };
 		3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantingsTableViewCell.swift; sourceTree = "<group>"; };
 		3FAC4ACD284562B300404C2E /* bee2_3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bee2_3.PNG; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/polli images/bee2_3.PNG"; sourceTree = "<group>"; };
@@ -73,6 +75,10 @@
 		3FFF6468280CAD0600030ABD /* PollinatorPathwayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollinatorPathwayUITests.swift; sourceTree = "<group>"; };
 		3FFF646A280CAD0600030ABD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		442ECECA28E63B8C00869252 /* Planting VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planting VC.swift"; sourceTree = "<group>"; };
+		44D6871828FDD09000A669C5 /* bee2_1.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bee2_1.PNG; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/bee2_1.PNG"; sourceTree = "<group>"; };
+		44D6871A28FDD0A100A669C5 /* bee2_3.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bee2_3.PNG; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/bee2_3.PNG"; sourceTree = "<group>"; };
+		44D6871C28FDD0AE00A669C5 /* hummingbird1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hummingbird1_2.png; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/hummingbird1_2.png"; sourceTree = "<group>"; };
+		44D6871E28FDD0D600A669C5 /* bee3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bee3_2.png; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/polli images/bee3_2.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,11 +139,14 @@
 				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
 				442ECECA28E63B8C00869252 /* Planting VC.swift */,
 				3FFF644F280CAD0500030ABD /* Assets.xcassets */,
+				44D6871C28FDD0AE00A669C5 /* hummingbird1_2.png */,
+				44D6871A28FDD0A100A669C5 /* bee2_3.PNG */,
+				44D6871E28FDD0D600A669C5 /* bee3_2.png */,
+				44D6871828FDD09000A669C5 /* bee2_1.PNG */,
 				3FAC4ACF284562B300404C2E /* bee2_1.png */,
 				3FAC4ACE284562B300404C2E /* bee2_2.png */,
 				3FAC4ACD284562B300404C2E /* bee2_3.PNG */,
 				3FAC4AD32845639200404C2E /* hummingbird1_2.png */,
-				3FAC4A48283DA54600404C2E /* bee4_2png.png */,
 				3FAC4A47283DA54600404C2E /* butterfly1_2.png */,
 				3FAC4A4C283DA54600404C2E /* butterfly3_2.png */,
 				3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */,
@@ -270,11 +279,14 @@
 				3FFF6453280CAD0500030ABD /* LaunchScreen.storyboard in Resources */,
 				3FAC4AD42845639200404C2E /* hummingbird1_2.png in Resources */,
 				3FAC4A53283DA54600404C2E /* butterfly3_2.png in Resources */,
-				3FAC4A4F283DA54600404C2E /* bee4_2png.png in Resources */,
 				3FFF6450280CAD0500030ABD /* Assets.xcassets in Resources */,
+				44D6871928FDD09000A669C5 /* bee2_1.PNG in Resources */,
 				3FAC4AD1284562B300404C2E /* bee2_2.png in Resources */,
 				3FAC4AD0284562B300404C2E /* bee2_3.PNG in Resources */,
 				3FFF644E280CAD0100030ABD /* Main.storyboard in Resources */,
+				44D6871F28FDD0D600A669C5 /* bee3_2.png in Resources */,
+				44D6871D28FDD0AE00A669C5 /* hummingbird1_2.png in Resources */,
+				44D6871B28FDD0A100A669C5 /* bee2_3.PNG in Resources */,
 				3FAC4A4E283DA54600404C2E /* butterfly1_2.png in Resources */,
 				3FAC4AD2284562B300404C2E /* bee2_1.png in Resources */,
 			);
