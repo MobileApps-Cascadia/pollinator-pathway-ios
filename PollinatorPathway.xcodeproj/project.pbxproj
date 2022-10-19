@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2A0AB728FBAE0000FE64E2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A0AB628FBAE0000FE64E2 /* SignUpViewController.swift */; };
+		3F2A0AB928FBAE1F00FE64E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A0AB828FBAE1F00FE64E2 /* HomeViewController.swift */; };
+		3F2A0ABC28FE040500FE64E2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2A0ABB28FE040500FE64E2 /* Utilities.swift */; };
 		3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B102818A00000D9A8B2 /* New User Setup VC.swift */; };
 		3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B122818A01C00D9A8B2 /* Existing User VC.swift */; };
 		3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B142818A02D00D9A8B2 /* Live Map VC.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2A0AB628FBAE0000FE64E2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3F2A0AB828FBAE1F00FE64E2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		3F2A0ABB28FE040500FE64E2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3F941B102818A00000D9A8B2 /* New User Setup VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New User Setup VC.swift"; sourceTree = "<group>"; };
 		3F941B122818A01C00D9A8B2 /* Existing User VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Existing User VC.swift"; sourceTree = "<group>"; };
 		3F941B142818A02D00D9A8B2 /* Live Map VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map VC.swift"; sourceTree = "<group>"; };
@@ -80,6 +86,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2A0ABA28FBAE3700FE64E2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F2A0AB828FBAE1F00FE64E2 /* HomeViewController.swift */,
+				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
+				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
+				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
+				3F2A0AB628FBAE0000FE64E2 /* SignUpViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3F2A0ABD28FE041700FE64E2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3F2A0ABB28FE040500FE64E2 /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		3FFF643A280CAD0100030ABD = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +131,9 @@
 			children = (
 				3FFF6446280CAD0100030ABD /* AppDelegate.swift */,
 				3FFF6448280CAD0100030ABD /* SceneDelegate.swift */,
+				3F2A0ABD28FE041700FE64E2 /* Helpers */,
+				3F2A0ABA28FBAE3700FE64E2 /* View Controllers */,
 				3FFF644C280CAD0100030ABD /* Main.storyboard */,
-				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
-				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
-				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
 				3FFF644F280CAD0500030ABD /* Assets.xcassets */,
 				3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */,
 				3FFF6454280CAD0500030ABD /* Info.plist */,
@@ -264,10 +289,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F2A0AB728FBAE0000FE64E2 /* SignUpViewController.swift in Sources */,
 				3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */,
 				3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */,
 				3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */,
 				3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */,
+				3F2A0AB928FBAE1F00FE64E2 /* HomeViewController.swift in Sources */,
+				3F2A0ABC28FE040500FE64E2 /* Utilities.swift in Sources */,
 				3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

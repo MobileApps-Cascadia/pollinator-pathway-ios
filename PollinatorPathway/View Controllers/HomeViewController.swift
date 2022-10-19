@@ -1,13 +1,13 @@
 //
-//  Existing User VC.swift
+//  HomeViewController.swift
 //  PollinatorPathway
 //
-//  Created by Student Account on 4/26/22.
+//  Created by Student Account on 10/15/22.
 //
 
 import UIKit
 
-class Existing_User_VC: UIViewController {
+class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,6 @@ class Existing_User_VC: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    
     */
 
 }
