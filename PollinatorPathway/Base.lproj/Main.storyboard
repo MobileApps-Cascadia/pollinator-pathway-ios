@@ -464,11 +464,6 @@
                     <navigationItem key="navigationItem" id="f4P-1W-d7c"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wiy-yT-gwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <view contentMode="scaleToFill" id="Xn1-bO-poX">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </view>
             </objects>
             <point key="canvasLocation" x="379" y="55"/>
         </scene>
