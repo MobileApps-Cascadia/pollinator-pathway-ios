@@ -22,7 +22,7 @@
 		442ECECB28E63B8C00869252 /* Planting VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442ECECA28E63B8C00869252 /* Planting VC.swift */; };
 		44D6872828FDDA7400A669C5 /* bee3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6872028FDDA7400A669C5 /* bee3_2.png */; };
 		44D6872928FDDA7400A669C5 /* butterfly3_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6872128FDDA7400A669C5 /* butterfly3_2.png */; };
-		44D6872A28FDDA7400A669C5 /* hummingbird1_2.psd in Resources */ = {isa = PBXBuildFile; fileRef = 44D6872228FDDA7400A669C5 /* hummingbird1_2.psd */; };
+		44D6872A28FDDA7400A669C5 /* hummingbird1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6872228FDDA7400A669C5 /* hummingbird1_2.png */; };
 		44D6872B28FDDA7400A669C5 /* butterfly1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6872328FDDA7400A669C5 /* butterfly1_2.png */; };
 		44D6872C28FDDA7400A669C5 /* bee1_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6872428FDDA7400A669C5 /* bee1_2.png */; };
 		44D6872E28FDDA7400A669C5 /* bee4_2png.png in Resources */ = {isa = PBXBuildFile; fileRef = 44D6872628FDDA7400A669C5 /* bee4_2png.png */; };
@@ -69,7 +69,7 @@
 		442ECECA28E63B8C00869252 /* Planting VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Planting VC.swift"; sourceTree = "<group>"; };
 		44D6872028FDDA7400A669C5 /* bee3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bee3_2.png; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/polli images/bee3_2.png"; sourceTree = "<group>"; };
 		44D6872128FDDA7400A669C5 /* butterfly3_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = butterfly3_2.png; sourceTree = "<group>"; };
-		44D6872228FDDA7400A669C5 /* hummingbird1_2.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = hummingbird1_2.psd; sourceTree = "<group>"; };
+		44D6872228FDDA7400A669C5 /* hummingbird1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hummingbird1_2.png; sourceTree = "<group>"; };
 		44D6872328FDDA7400A669C5 /* butterfly1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = butterfly1_2.png; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/polli images/butterfly1_2.png"; sourceTree = "<group>"; };
 		44D6872428FDDA7400A669C5 /* bee1_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bee1_2.png; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/polli images/bee1_2.png"; sourceTree = "<group>"; };
 		44D6872628FDDA7400A669C5 /* bee4_2png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bee4_2png.png; path = "../../../Desktop/BIT 381 iOS/PollinatorPathway/PollinatorPathway/polli images/bee4_2png.png"; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 				44D6872628FDDA7400A669C5 /* bee4_2png.png */,
 				44D6872328FDDA7400A669C5 /* butterfly1_2.png */,
 				44D6872128FDDA7400A669C5 /* butterfly3_2.png */,
-				44D6872228FDDA7400A669C5 /* hummingbird1_2.psd */,
+				44D6872228FDDA7400A669C5 /* hummingbird1_2.png */,
 				3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */,
 				3FFF6454280CAD0500030ABD /* Info.plist */,
 			);
@@ -272,7 +272,7 @@
 			files = (
 				44D6873128FDDC7000A669C5 /* bee2_2.PNG in Resources */,
 				3FFF6453280CAD0500030ABD /* LaunchScreen.storyboard in Resources */,
-				44D6872A28FDDA7400A669C5 /* hummingbird1_2.psd in Resources */,
+				44D6872A28FDDA7400A669C5 /* hummingbird1_2.png in Resources */,
 				44D6872E28FDDA7400A669C5 /* bee4_2png.png in Resources */,
 				44D6872828FDDA7400A669C5 /* bee3_2.png in Resources */,
 				44D6872C28FDDA7400A669C5 /* bee1_2.png in Resources */,
