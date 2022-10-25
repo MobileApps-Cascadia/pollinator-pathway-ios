@@ -8,12 +8,20 @@
 import UIKit
 
 class New_User_Setup_VC: UIViewController {
+    
+    @IBOutlet weak var scanBarButton: UIButton!
+    @IBOutlet weak var scanTextField: UITextField!
+    let scannerVC = New_User_Setup_VC()
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    super.viewDidLoad()
     }
+    
+    @objc func scanBarTapped() {
+        self.navigationController?.pushViewController(scannerVC, animated: true)
+    }
+    
+
     
 
     /*

@@ -7,3 +7,8 @@
 
 import Foundation
 import AVFoundation
+import UIKit
+
+class Scanner_VC: UIViewController {
+    
+
