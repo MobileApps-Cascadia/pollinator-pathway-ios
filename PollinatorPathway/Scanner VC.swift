@@ -16,7 +16,9 @@ import UIKit
 class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
-
+    
+    @objc public weak var scannerDelegate: ScannerVD?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -112,7 +114,7 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     //function to return metadata output back to new user screen (TEMPORARY)
     func found(code: String) {
         print(code)
-        delegate?.didFindScannedText(text: code)
+        scannerDelegate?.didFindScannedText(text: code)
         self.navigationController?.popViewController(animated: true)
     }
     //hide status bar

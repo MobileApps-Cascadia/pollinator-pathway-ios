@@ -15,7 +15,7 @@ class New_User_Setup_VC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        scannerVC.delegate = self
+        scannerVC.scannerDelegate = self
     }
     
     @objc func scanBarTapped() {
