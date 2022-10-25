@@ -185,6 +185,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New User Setup" image="qrcode" catalog="system" id="lyg-fW-zeJ" userLabel="New User Setup"/>
+                    <connections>
+                        <outlet property="scanQRbutton" destination="ioU-gh-n0S" id="V7T-Bw-T3t"/>
+                        <outlet property="scanQRtext" destination="Gkr-Il-8kP" id="73A-1P-Vn3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOg-EP-zQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
