@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M5b-gq-tQy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M5b-gq-tQy">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -148,15 +148,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioU-gh-n0S">
-                                <rect key="frame" x="51" y="365" width="319" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioU-gh-n0S">
+                                <rect key="frame" x="57" y="360" width="207" height="48"/>
                                 <color key="backgroundColor" red="0.086274509799999996" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="319" id="Fks-ss-duF"/>
-                                    <constraint firstAttribute="width" constant="319" id="HcZ-sC-Q1Y"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="KCn-fX-LmV"/>
-                                    <constraint firstAttribute="height" constant="30" id="jBU-7Z-RSH"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="SCAN QR CODE">
                                     <color key="titleColor" red="0.96078431369999995" green="0.95686274510000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -167,33 +161,31 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="qrcode.viewfinder" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W2W-rU-bT5">
-                                <rect key="frame" x="48" y="138.5" width="319" height="113"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="319" id="1Lw-jR-7er"/>
-                                    <constraint firstAttribute="height" constant="364.5" id="W3P-ON-tz1"/>
-                                </constraints>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test Code Output" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD1-xd-gYt">
+                                <rect key="frame" x="93" y="144" width="135" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gkr-Il-8kP">
+                                <rect key="frame" x="64" y="205" width="193" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.86292189360000005" green="0.95448559519999998" blue="0.87449979779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ioU-gh-n0S" firstAttribute="top" secondItem="W2W-rU-bT5" secondAttribute="bottom" constant="112.5" id="2e8-ZQ-H9E"/>
-                            <constraint firstAttribute="trailing" secondItem="W2W-rU-bT5" secondAttribute="trailing" constant="47" id="4Ec-jP-OP4"/>
-                            <constraint firstAttribute="trailing" secondItem="ioU-gh-n0S" secondAttribute="trailing" constant="44" id="Gzj-KF-B07"/>
-                            <constraint firstItem="ioU-gh-n0S" firstAttribute="leading" secondItem="oHE-k5-HSv" secondAttribute="leading" constant="51" id="OtZ-cA-J7a"/>
-                            <constraint firstItem="W2W-rU-bT5" firstAttribute="top" secondItem="M8y-Ya-FWK" secondAttribute="bottom" constant="138" id="Zvm-jy-487"/>
-                            <constraint firstItem="W2W-rU-bT5" firstAttribute="leading" secondItem="oHE-k5-HSv" secondAttribute="leading" constant="48" id="b8s-AQ-4vH"/>
-                            <constraint firstItem="UDh-Nj-4yy" firstAttribute="top" secondItem="ioU-gh-n0S" secondAttribute="bottom" constant="124" id="g9W-Ri-QWe"/>
-                            <constraint firstAttribute="trailing" secondItem="ioU-gh-n0S" secondAttribute="trailing" constant="44" id="lQ4-X7-XqM"/>
-                            <constraint firstItem="UDh-Nj-4yy" firstAttribute="top" secondItem="ioU-gh-n0S" secondAttribute="bottom" constant="124" id="mBT-1h-vXh"/>
-                            <constraint firstItem="ioU-gh-n0S" firstAttribute="leading" secondItem="oHE-k5-HSv" secondAttribute="leading" constant="51" id="sxp-B0-TDM"/>
+                            <constraint firstItem="ioU-gh-n0S" firstAttribute="centerX" secondItem="oHE-k5-HSv" secondAttribute="centerX" id="gNS-FD-w6W"/>
+                            <constraint firstItem="ioU-gh-n0S" firstAttribute="centerY" secondItem="oHE-k5-HSv" secondAttribute="centerY" constant="100" id="rfx-Vz-fgd"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="New User Setup" image="qrcode" catalog="system" id="lyg-fW-zeJ" userLabel="New User Setup"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOg-EP-zQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-371.01449275362324" y="-551.11607142857144"/>
+            <point key="canvasLocation" x="-371.25" y="-551.4084507042254"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UVt-cr-IMj">
@@ -330,7 +322,7 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KBY-eu-cmO" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="55.5" width="240" height="44"/>
+                                                        <rect key="frame" x="0.0" y="49.5" width="240" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KBY-eu-cmO" id="pWw-3v-ZxI">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
@@ -364,7 +356,7 @@
                                                         </connections>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GQV-xD-c6x" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="99.5" width="240" height="44"/>
+                                                        <rect key="frame" x="0.0" y="93.5" width="240" height="44"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQV-xD-c6x" id="UCV-kg-lrV">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="44"/>
@@ -372,7 +364,7 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OiF-u4-8Q4" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="143.5" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="137.5" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OiF-u4-8Q4" id="Djm-tH-0TX">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
@@ -380,7 +372,7 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bqA-Ll-VKD" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="187" width="240" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="181" width="240" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bqA-Ll-VKD" id="1iU-MI-Akz">
                                                             <rect key="frame" x="0.0" y="0.0" width="240" height="43.5"/>
@@ -515,7 +507,7 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5f-JL-z60">
-                                                <rect key="frame" x="126.5" y="879" width="67" height="34.5"/>
+                                                <rect key="frame" x="130" y="879" width="60.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Close">
                                                     <backgroundConfiguration key="background">
@@ -574,9 +566,8 @@
         <image name="map.fill" catalog="system" width="128" height="110"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
-        <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
