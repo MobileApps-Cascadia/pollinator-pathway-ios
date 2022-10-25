@@ -21,6 +21,7 @@ class New_User_Setup_VC: UIViewController {
     @objc func scanBarTapped() {
         self.navigationController?.pushViewController(scannerVC, animated: true)
     }
+}
     
     extension New_User_Setup_VC: ScannerVD {
         func didFindScannedText(text: String) {
@@ -43,4 +44,3 @@ class New_User_Setup_VC: UIViewController {
     
     */
 
-}
