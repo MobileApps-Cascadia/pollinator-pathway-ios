@@ -8,6 +8,11 @@
 import AVFoundation
 import UIKit
 
+//delegate to return av MetaData to text box for  now (TEMPORARY)
+@objc protocol ScannerVD: AnyObject {
+    @objc func didFindScannedText(text: String)
+}
+
 class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
@@ -91,8 +96,12 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         captureSession.stopRunning()
         
         if let metadataObject = metadataObjects.first {
-            guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
-            guard let stringValue = readableObject.stringValue else { return }
+            guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else {
+                return
+            }
+            guard let stringValue = readableObject.stringValue else {
+                return
+            }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
             found(code: stringValue)
         }
@@ -100,14 +109,17 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         dismiss(animated: true)
     }
     
+    //function to return metadata output back to new user screen (TEMPORARY)
     func found(code: String) {
         print(code)
+        delegate?.didFindScannedText(text: code)
+        self.navigationController?.popViewController(animated: true)
     }
-    
+    //hide status bar
     override var prefersStatusBarHidden: Bool {
         return true
     }
-    
+    //portrait only (TEMPORARY)
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }

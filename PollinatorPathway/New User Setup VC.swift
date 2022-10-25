@@ -11,14 +11,22 @@ class New_User_Setup_VC: UIViewController {
     
     @IBOutlet weak var scanBarButton: UIButton!
     @IBOutlet weak var scanTextField: UITextField!
-    let scannerVC = New_User_Setup_VC()
+    let scannerVC = Scanner_VC()
 
     override func viewDidLoad() {
-    super.viewDidLoad()
+        super.viewDidLoad()
+        scannerVC.delegate = self
     }
     
     @objc func scanBarTapped() {
         self.navigationController?.pushViewController(scannerVC, animated: true)
+    }
+    
+    extension New_User_Setup_VC: ScannerVD {
+        func didFindScannedText(text: String) {
+          //Assigning the delegate to scanTextField
+            scanTextField.text = text
+        }
     }
     
 
