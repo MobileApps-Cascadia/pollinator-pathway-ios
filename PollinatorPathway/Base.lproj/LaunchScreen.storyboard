@@ -18,14 +18,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
-                                <rect key="frame" x="16.333333333333343" y="144" width="381.66666666666663" height="608"/>
+                                <rect key="frame" x="41.666666666666657" y="144" width="331" height="608"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="emblem" translatesAutoresizingMaskIntoConstraints="NO" id="zBP-hr-t6h">
-                                        <rect key="frame" x="40.666666666666686" y="0.0" width="300" height="530.33333333333337"/>
+                                        <rect key="frame" x="15.333333333333343" y="0.0" width="300" height="533"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0o-dp-H63">
-                                        <rect key="frame" x="0.0" y="587.33333333333337" width="381.66666666666669" height="20.666666666666629"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="natural" lineBreakMode="clip" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F0o-dp-H63">
+                                        <rect key="frame" x="0.0" y="590" width="331" height="18"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
