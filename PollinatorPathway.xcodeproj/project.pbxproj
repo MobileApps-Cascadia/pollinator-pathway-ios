@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2DB5712909E33A0013A056 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DB5702909E33A0013A056 /* SignUpViewController.swift */; };
+		3F2DB5732909E35B0013A056 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2DB5722909E35B0013A056 /* HomeViewController.swift */; };
 		3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B102818A00000D9A8B2 /* New User Setup VC.swift */; };
 		3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B122818A01C00D9A8B2 /* Existing User VC.swift */; };
 		3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B142818A02D00D9A8B2 /* Live Map VC.swift */; };
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F2DB5702909E33A0013A056 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		3F2DB5722909E35B0013A056 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F941B102818A00000D9A8B2 /* New User Setup VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New User Setup VC.swift"; sourceTree = "<group>"; };
 		3F941B122818A01C00D9A8B2 /* Existing User VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Existing User VC.swift"; sourceTree = "<group>"; };
 		3F941B142818A02D00D9A8B2 /* Live Map VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map VC.swift"; sourceTree = "<group>"; };
@@ -102,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F2DB5742909E3690013A056 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
+				3F2DB5702909E33A0013A056 /* SignUpViewController.swift */,
+				3F2DB5722909E35B0013A056 /* HomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		3FFF643A280CAD0100030ABD = {
 			isa = PBXGroup;
 			children = (
@@ -127,10 +141,10 @@
 			children = (
 				3FFF6446280CAD0100030ABD /* AppDelegate.swift */,
 				3FFF6448280CAD0100030ABD /* SceneDelegate.swift */,
+				3F2DB5742909E3690013A056 /* ViewControllers */,
 				3FFF644C280CAD0100030ABD /* Main.storyboard */,
 				3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */,
 				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
-				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
 				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
 				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
 				442ECECA28E63B8C00869252 /* Planting VC.swift */,
@@ -142,7 +156,7 @@
 				44D6872628FDDA7400A669C5 /* bee4_2png.png */,
 				44D6872328FDDA7400A669C5 /* butterfly1_2.png */,
 				44D6872128FDDA7400A669C5 /* butterfly3_2.png */,
-				44D6872228FDDA7400A669C5 /* hummingbird1_2.png */,
+				44D6872228FDDA7400A669C5 /* hummingbird1_2.psd */,
 				3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */,
 				3FFF6454280CAD0500030ABD /* Info.plist */,
 			);
@@ -272,7 +286,7 @@
 			files = (
 				44D6873128FDDC7000A669C5 /* bee2_2.png in Resources */,
 				3FFF6453280CAD0500030ABD /* LaunchScreen.storyboard in Resources */,
-				44D6872A28FDDA7400A669C5 /* hummingbird1_2.png in Resources */,
+				44D6872A28FDDA7400A669C5 /* hummingbird1_2.psd in Resources */,
 				44D6872E28FDDA7400A669C5 /* bee4_2png.png in Resources */,
 				44D6872828FDDA7400A669C5 /* bee3_2.png in Resources */,
 				44D6872C28FDDA7400A669C5 /* bee1_2.png in Resources */,
@@ -310,7 +324,9 @@
 				442ECECB28E63B8C00869252 /* Planting VC.swift in Sources */,
 				3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */,
 				3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */,
+				3F2DB5732909E35B0013A056 /* HomeViewController.swift in Sources */,
 				3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */,
+				3F2DB5712909E33A0013A056 /* SignUpViewController.swift in Sources */,
 				3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */,
 				3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */,
 			);
