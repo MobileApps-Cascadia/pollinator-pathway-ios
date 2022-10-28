@@ -577,6 +577,7 @@
                                             <constraint firstItem="W5f-JL-z60" firstAttribute="top" secondItem="heZ-zK-BIy" secondAttribute="bottom" constant="32" id="f74-Wv-e1d"/>
                                             <constraint firstItem="5II-Ac-EgD" firstAttribute="top" secondItem="d8z-L5-o81" secondAttribute="top" constant="28" id="fc0-tX-VLq"/>
                                             <constraint firstItem="W5f-JL-z60" firstAttribute="centerX" secondItem="d8z-L5-o81" secondAttribute="centerX" id="gZh-63-IoJ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1100" id="gtv-Yo-EkC"/>
                                             <constraint firstAttribute="trailing" secondItem="W8w-QP-xdf" secondAttribute="trailing" constant="40" id="jZe-tU-GFp"/>
                                             <constraint firstItem="heZ-zK-BIy" firstAttribute="top" secondItem="W8w-QP-xdf" secondAttribute="bottom" constant="22" id="kHn-uN-xrJ"/>
                                             <constraint firstItem="W8w-QP-xdf" firstAttribute="top" secondItem="5II-Ac-EgD" secondAttribute="bottom" constant="8" symbolic="YES" id="xyb-vl-JuR"/>
@@ -584,19 +585,20 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="d8z-L5-o81" firstAttribute="leading" secondItem="aY0-UY-yXq" secondAttribute="leading" id="OPt-BW-JgT"/>
-                                    <constraint firstAttribute="trailing" secondItem="d8z-L5-o81" secondAttribute="trailing" id="QrC-bI-w0o"/>
-                                    <constraint firstAttribute="bottom" secondItem="d8z-L5-o81" secondAttribute="bottom" constant="-893" id="kNf-KB-qRU"/>
-                                    <constraint firstItem="d8z-L5-o81" firstAttribute="top" secondItem="aY0-UY-yXq" secondAttribute="top" id="zPG-uH-kXp"/>
+                                    <constraint firstAttribute="trailing" secondItem="d8z-L5-o81" secondAttribute="trailing" id="Naf-0K-8rc"/>
+                                    <constraint firstItem="d8z-L5-o81" firstAttribute="leading" secondItem="aY0-UY-yXq" secondAttribute="leading" id="SZQ-KZ-nsi"/>
+                                    <constraint firstAttribute="bottom" secondItem="d8z-L5-o81" secondAttribute="bottom" id="X7C-W7-ocd"/>
+                                    <constraint firstItem="d8z-L5-o81" firstAttribute="top" secondItem="aY0-UY-yXq" secondAttribute="top" id="wGB-8n-noE"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="aY0-UY-yXq" firstAttribute="top" secondItem="oO6-4f-hJw" secondAttribute="bottom" id="7i0-51-1cG"/>
-                            <constraint firstItem="aY0-UY-yXq" firstAttribute="leading" secondItem="CQO-f9-zgv" secondAttribute="leading" id="HWK-Ff-BUl"/>
+                            <constraint firstItem="d8z-L5-o81" firstAttribute="height" secondItem="CQO-f9-zgv" secondAttribute="height" multiplier="2.84091" id="6Ih-Hn-URW"/>
                             <constraint firstItem="d8z-L5-o81" firstAttribute="width" secondItem="CQO-f9-zgv" secondAttribute="width" id="KNG-oh-3W9"/>
-                            <constraint firstItem="cB9-4i-KVs" firstAttribute="top" secondItem="aY0-UY-yXq" secondAttribute="bottom" id="njp-gc-Rzm"/>
-                            <constraint firstAttribute="trailing" secondItem="aY0-UY-yXq" secondAttribute="trailing" id="tf4-lq-7oa"/>
+                            <constraint firstAttribute="trailing" secondItem="aY0-UY-yXq" secondAttribute="trailing" id="LSH-qv-eMt"/>
+                            <constraint firstItem="cB9-4i-KVs" firstAttribute="top" secondItem="aY0-UY-yXq" secondAttribute="bottom" id="ddV-Bm-Pjg"/>
+                            <constraint firstItem="aY0-UY-yXq" firstAttribute="top" secondItem="oO6-4f-hJw" secondAttribute="bottom" id="qTD-w7-pNl"/>
+                            <constraint firstItem="aY0-UY-yXq" firstAttribute="leading" secondItem="CQO-f9-zgv" secondAttribute="leading" id="xos-aQ-aJw"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="320" height="548"/>
