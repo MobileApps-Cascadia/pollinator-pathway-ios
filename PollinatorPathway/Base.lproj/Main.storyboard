@@ -113,6 +113,7 @@
                                                                 </buttonConfiguration>
                                                                 <connections>
                                                                     <action selector="NewUserTapped:" destination="ClU-Tk-bSz" eventType="touchUpInside" id="yqC-oM-K1x"/>
+                                                                    <segue destination="7qj-bR-jon" kind="show" id="vc9-sy-Byv"/>
                                                                 </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjJ-fD-W8l">
@@ -169,11 +170,11 @@
                         <viewControllerLayoutGuide type="bottom" id="hYQ-mp-vqh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cZN-Xn-z61">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c9p-LH-cBq">
-                                <rect key="frame" x="56" y="40" width="208" height="317"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c9p-LH-cBq">
+                                <rect key="frame" x="56" y="39" width="208" height="317"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udh-bw-o4Q">
                                         <rect key="frame" x="0.0" y="0.0" width="208" height="40"/>
@@ -251,7 +252,7 @@
         <!--Home View Controller-->
         <scene sceneID="exo-EU-rgp">
             <objects>
-                <viewController id="yVx-5B-WJ7" customClass="HomeViewController" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="yVx-5B-WJ7" customClass="HomeViewController" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BKB-AC-NpX"/>
                         <viewControllerLayoutGuide type="bottom" id="idR-ZQ-8iO"/>

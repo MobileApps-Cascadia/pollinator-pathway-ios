@@ -57,6 +57,8 @@ class Existing_User_VC: UIViewController {
     
     
     @IBAction func loginButtonTapped(_ sender: Any) {
+        // Validate text fields
+        
     }
     
     @IBAction func NewUserTapped(_ sender: Any) {

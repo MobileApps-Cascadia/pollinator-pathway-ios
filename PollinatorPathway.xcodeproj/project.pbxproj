@@ -38,6 +38,7 @@
 		3F2EA196290C75E2006520A3 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2EA195290C75E2006520A3 /* FirebaseRemoteConfigSwift */; };
 		3F2EA198290C75E2006520A3 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2EA197290C75E2006520A3 /* FirebaseStorage */; };
 		3F2EA19A290C75E2006520A3 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3F2EA199290C75E2006520A3 /* FirebaseStorageCombine-Community */; };
+		3F2EA19C290C8807006520A3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EA19B290C8807006520A3 /* Constants.swift */; };
 		3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B102818A00000D9A8B2 /* New User Setup VC.swift */; };
 		3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B122818A01C00D9A8B2 /* Existing User VC.swift */; };
 		3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B142818A02D00D9A8B2 /* Live Map VC.swift */; };
@@ -83,6 +84,7 @@
 		3F2DB5722909E35B0013A056 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F2EA1602909F2A0006520A3 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3F2EA162290B470C006520A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3F2EA19B290C8807006520A3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3F941B102818A00000D9A8B2 /* New User Setup VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New User Setup VC.swift"; sourceTree = "<group>"; };
 		3F941B122818A01C00D9A8B2 /* Existing User VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Existing User VC.swift"; sourceTree = "<group>"; };
 		3F941B142818A02D00D9A8B2 /* Live Map VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map VC.swift"; sourceTree = "<group>"; };
@@ -178,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				3F2EA1602909F2A0006520A3 /* Utilities.swift */,
+				3F2EA19B290C8807006520A3 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				3F2DB5712909E33A0013A056 /* SignUpViewController.swift in Sources */,
 				3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */,
 				3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */,
+				3F2EA19C290C8807006520A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
