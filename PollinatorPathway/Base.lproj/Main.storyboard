@@ -11,7 +11,7 @@
         <!--Existing Login-->
         <scene sceneID="qWs-uI-RLQ">
             <objects>
-                <viewController id="ClU-Tk-bSz" customClass="Existing_User_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ClU-Tk-bSz" customClass="Existing_User_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oNS-dH-89w"/>
                         <viewControllerLayoutGuide type="bottom" id="yYY-EG-6dH"/>
@@ -43,6 +43,9 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="IZi-8h-5Q8" firstAttribute="top" secondItem="GLe-3l-AY5" secondAttribute="top" constant="10" id="LiR-y7-IdV"/>
+                                                        </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mje-tT-mOb">
                                                         <rect key="frame" x="0.0" y="72" width="265" height="143"/>
@@ -63,6 +66,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot?">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="ForgotButtonTapped:" destination="ClU-Tk-bSz" eventType="touchUpInside" id="gSN-AJ-BME"/>
+                                                                </connections>
                                                             </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pic-r0-fW7">
                                                                 <rect key="frame" x="0.0" y="103" width="265" height="40"/>
@@ -90,6 +96,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                                                     <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="loginButtonTapped:" destination="ClU-Tk-bSz" eventType="touchUpInside" id="pme-2b-IwA"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0br-j4-vjk">
                                                                 <rect key="frame" x="0.0" y="43" width="262" height="35"/>
@@ -102,6 +111,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="New User? Register Here" titleAlignment="center">
                                                                     <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="NewUserTapped:" destination="ClU-Tk-bSz" eventType="touchUpInside" id="yqC-oM-K1x"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjJ-fD-W8l">
                                                                 <rect key="frame" x="0.0" y="86" width="262" height="16"/>
@@ -112,6 +124,9 @@
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="GLe-3l-AY5" firstAttribute="top" secondItem="6Pc-BC-Ww8" secondAttribute="top" constant="20" id="2l5-hr-ceq"/>
+                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="0.2007988131776148" colorSpace="custom" customColorSpace="sRGB"/>
@@ -132,6 +147,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Existing Login" image="person.fill" catalog="system" id="qKb-gU-KRq"/>
+                    <connections>
+                        <outlet property="EmailTextField" destination="ht8-ZZ-Yz5" id="NET-Kj-bqz"/>
+                        <outlet property="ErrorLabel" destination="PjJ-fD-W8l" id="vxg-mR-MV9"/>
+                        <outlet property="ForgotButton" destination="Ges-ba-Jrk" id="n9V-Hx-OJP"/>
+                        <outlet property="LoginButton" destination="YxD-Ox-ZDp" id="Ny3-wl-ncX"/>
+                        <outlet property="NewUserButton" destination="0br-j4-vjk" id="mnM-aW-W6W"/>
+                        <outlet property="PasswordTextField" destination="Pic-r0-fW7" id="VS5-tV-9SU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouX-zC-IP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,22 +175,22 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="c9p-LH-cBq">
                                 <rect key="frame" x="56" y="40" width="208" height="317"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udh-bw-o4Q">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Udh-bw-o4Q">
                                         <rect key="frame" x="0.0" y="0.0" width="208" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-xo-6KA">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gRi-xo-6KA">
                                         <rect key="frame" x="0.0" y="60" width="208" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92L-xZ-gED">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92L-xZ-gED">
                                         <rect key="frame" x="0.0" y="120" width="208" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wvq-ss-u3G">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wvq-ss-u3G">
                                         <rect key="frame" x="0.0" y="180" width="208" height="40"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -185,8 +208,11 @@
                                             </backgroundConfiguration>
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SignUpButtonTapped:" destination="7qj-bR-jon" eventType="touchUpInside" id="7Gs-WM-a6q"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOa-dw-yjC">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOa-dw-yjC">
                                         <rect key="frame" x="0.0" y="300" width="208" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
@@ -209,10 +235,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pin-w8-93Q"/>
+                    <connections>
+                        <outlet property="EmailTextField" destination="92L-xZ-gED" id="wh1-9N-Ghl"/>
+                        <outlet property="ErrorLabel" destination="zOa-dw-yjC" id="PAE-CS-epf"/>
+                        <outlet property="FirstNameTextField" destination="Udh-bw-o4Q" id="Plq-8n-jJR"/>
+                        <outlet property="LastNameTextField" destination="gRi-xo-6KA" id="AuP-my-pF8"/>
+                        <outlet property="PasswordTextField" destination="Wvq-ss-u3G" id="JZZ-5A-ge2"/>
+                        <outlet property="SignUpButton" destination="R7L-Q5-TpT" id="zSa-2I-jZX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CUQ-eG-m9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-351" y="1021"/>
+            <point key="canvasLocation" x="-371" y="943"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="exo-EU-rgp">
@@ -242,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wLM-T4-n3M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="851"/>
+            <point key="canvasLocation" x="429" y="942"/>
         </scene>
         <!--New User Setup-->
         <scene sceneID="a25-hh-KQO">
@@ -353,7 +387,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xBJ-6c-SLS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1016.25" y="489.08450704225351"/>
+            <point key="canvasLocation" x="-1264" y="577"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="7oS-G6-onz">
