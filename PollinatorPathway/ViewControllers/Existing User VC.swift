@@ -75,10 +75,10 @@ class Existing_User_VC: UIViewController {
                 self.ErrorLabel.alpha = 1
             }
             else {
-                let homeViewController =
-                    self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+                let profileViewController =
+                    self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileVC
                  
-                    self.view.window?.rootViewController = homeViewController
+                    self.view.window?.rootViewController = profileViewController
                     self.view.window?.makeKeyAndVisible()
             }
         }
