@@ -28,7 +28,6 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
             return
         }
-        
         let videoInput: AVCaptureDeviceInput
         
         do {
@@ -93,7 +92,7 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             captureSession.stopRunning()
         }
     }
-    
+    	
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         captureSession.stopRunning()
         
