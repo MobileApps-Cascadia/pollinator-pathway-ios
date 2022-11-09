@@ -163,6 +163,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="TOT-mD-CNT" kind="show" id="MI7-qt-rHx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Code Output" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD1-xd-gYt">
                                 <rect key="frame" x="92.5" y="144" width="135" height="20.5"/>
@@ -210,6 +213,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOg-EP-zQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-371.25" y="-551.4084507042254"/>
+        </scene>
+        <!--ScannerVC-->
+        <scene sceneID="oza-GJ-BOu">
+            <objects>
+                <viewController id="TOT-mD-CNT" customClass="Scanner_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I5A-I1-gNo"/>
+                        <viewControllerLayoutGuide type="bottom" id="rPV-Eg-sas"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G53-tu-s83">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BHG-rX-4vv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vqb-9j-huy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="-567"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="UVt-cr-IMj">
