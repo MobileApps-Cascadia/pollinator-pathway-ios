@@ -17,6 +17,7 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
+    
     @objc public weak var scannerDelegate: ScannerVD?
     
     override func viewDidLoad() {
