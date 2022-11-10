@@ -4,7 +4,7 @@
 //
 //  Created by Student Account on 10/25/22.
 //
-
+import Foundation
 import AVFoundation
 import UIKit
 
@@ -17,6 +17,7 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
     
+    
     @objc public weak var scannerDelegate: ScannerVD?
     
     override func viewDidLoad() {
@@ -28,7 +29,6 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else {
             return
         }
-        
         let videoInput: AVCaptureDeviceInput
         
         do {
@@ -93,7 +93,7 @@ class Scanner_VC: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
             captureSession.stopRunning()
         }
     }
-    
+    	
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         captureSession.stopRunning()
         
