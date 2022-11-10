@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad10_5" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -13,49 +13,40 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
-                                <rect key="frame" x="83.5" y="228" width="667.5" height="667.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
+                                <rect key="frame" x="-46" y="42" width="412.5" height="387"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OPP-yn-PDY">
-                                        <rect key="frame" x="0.0" y="208.5" width="250" height="250"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emblem.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-hq-N9s">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
-                                            </imageView>
-                                        </subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emblem.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-hq-N9s">
+                                        <rect key="frame" x="52.5" y="0.0" width="308" height="308"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="OPP-yn-PDY" secondAttribute="height" multiplier="1:1" id="gMR-PO-17G"/>
+                                            <constraint firstAttribute="width" secondItem="R4H-hq-N9s" secondAttribute="height" multiplier="1:1" id="ojC-Wc-ROk"/>
                                         </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zqN-WR-0ao">
-                                        <rect key="frame" x="260" y="322.5" width="407.5" height="22"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" id="F0o-dp-H63">
-                                                <rect key="frame" x="0.0" y="0.0" width="407.5" height="22"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <variation key="widthClass=regular" axis="horizontal"/>
-                                    </stackView>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" id="F0o-dp-H63">
+                                        <rect key="frame" x="2.5" y="365" width="407.5" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="3cy-km-EqT" secondAttribute="height" multiplier="1:1" id="x0C-gT-ez9"/>
-                                </constraints>
                                 <variation key="widthClass=regular" axis="horizontal" spacing="10"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3cy-km-EqT" secondAttribute="trailing" constant="7" id="3KQ-HS-xpb"/>
                             <constraint firstItem="3cy-km-EqT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-4.5" id="7yt-Gn-tVT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="3cy-km-EqT" secondAttribute="leading" constant="46" id="9NR-02-kAh"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="7" id="Zo7-CW-DJl"/>
                             <constraint firstItem="3cy-km-EqT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dFE-Ra-kZ0"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="7" id="quj-34-SH1"/>
+                            <constraint firstAttribute="bottom" secondItem="3cy-km-EqT" secondAttribute="bottom" constant="7" id="tFb-dH-d2y"/>
                         </constraints>
                     </view>
                 </viewController>
