@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -13,46 +13,45 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
-                                <rect key="frame" x="-46" y="42" width="412.5" height="387"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
+                                <rect key="frame" x="7" y="46.5" width="568.66666666666663" height="387"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emblem.png" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-hq-N9s">
-                                        <rect key="frame" x="52.5" y="0.0" width="308" height="308"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="R4H-hq-N9s" secondAttribute="height" multiplier="1:1" id="ojC-Wc-ROk"/>
-                                        </constraints>
-                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6xU-qS-jQj">
+                                        <rect key="frame" x="159.33333333333337" y="0.0" width="250" height="338"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emblem.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-hq-N9s">
+                                                <rect key="frame" x="0.0" y="44" width="250" height="250"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" id="F0o-dp-H63">
-                                        <rect key="frame" x="2.5" y="365" width="407.5" height="22"/>
+                                        <rect key="frame" x="80.666666666666657" y="365" width="407.33333333333337" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <variation key="widthClass=regular" axis="horizontal" spacing="10"/>
+                                <variation key="widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3cy-km-EqT" secondAttribute="trailing" constant="7" id="3KQ-HS-xpb"/>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-4.5" id="7yt-Gn-tVT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="3cy-km-EqT" secondAttribute="leading" constant="46" id="9NR-02-kAh"/>
+                            <constraint firstAttribute="trailing" secondItem="3cy-km-EqT" secondAttribute="trailing" constant="-7" id="3KQ-HS-xpb"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="9Ty-Y7-FtF"/>
                             <constraint firstItem="3cy-km-EqT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="7" id="Zo7-CW-DJl"/>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="dFE-Ra-kZ0"/>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="7" id="quj-34-SH1"/>
-                            <constraint firstAttribute="bottom" secondItem="3cy-km-EqT" secondAttribute="bottom" constant="7" id="tFb-dH-d2y"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fml-MI-h4T"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="51.760563380281688" y="375"/>
         </scene>
     </scenes>
     <resources>
