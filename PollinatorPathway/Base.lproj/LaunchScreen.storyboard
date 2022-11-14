@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,25 +12,25 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
-                                <rect key="frame" x="7" y="46.5" width="568.66666666666663" height="387"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
+                                <rect key="frame" x="7" y="46.5" width="572" height="387"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6xU-qS-jQj">
-                                        <rect key="frame" x="159.33333333333337" y="0.0" width="250" height="338"/>
+                                        <rect key="frame" x="161" y="0.0" width="250" height="332.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emblem.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-hq-N9s">
-                                                <rect key="frame" x="0.0" y="44" width="250" height="250"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="emblem.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-hq-N9s">
+                                                <rect key="frame" x="0.0" y="41.5" width="250" height="250"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" id="F0o-dp-H63">
-                                        <rect key="frame" x="80.666666666666657" y="365" width="407.33333333333337" height="22"/>
+                                        <rect key="frame" x="31.5" y="359.5" width="509" height="27.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -39,13 +38,12 @@
                                 <variation key="widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="3cy-km-EqT" secondAttribute="trailing" constant="-7" id="3KQ-HS-xpb"/>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="9Ty-Y7-FtF"/>
+                            <constraint firstAttribute="trailing" secondItem="3cy-km-EqT" secondAttribute="trailing" id="3KQ-HS-xpb"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="top" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="57" id="9Ty-Y7-FtF"/>
                             <constraint firstItem="3cy-km-EqT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="7" id="Zo7-CW-DJl"/>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fml-MI-h4T"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fml-MI-h4T"/>
                         </constraints>
                     </view>
                 </viewController>
