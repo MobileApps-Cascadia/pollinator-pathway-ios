@@ -87,11 +87,10 @@
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="262" id="BiH-D1-f8a"/>
                                                                     <constraint firstAttribute="height" constant="35" id="sxc-bb-LhO"/>
                                                                 </constraints>
+                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
                                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Login">
-                                                                    <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="21"/>
-                                                                </buttonConfiguration>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Login"/>
                                                                 <connections>
                                                                     <segue destination="UcM-YA-mNN" kind="show" id="t79-Vu-Yq9"/>
                                                                 </connections>
@@ -319,10 +318,10 @@
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KBY-eu-cmO" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="49.5" width="278" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="49.5" width="278" height="37"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KBY-eu-cmO" id="pWw-3v-ZxI">
-                                                            <rect key="frame" x="0.0" y="0.0" width="278" height="43.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="278" height="37"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bee1_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="bmT-Cs-mtg">
@@ -336,9 +335,11 @@
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAl-Vp-emN">
+                                                                <button opaque="NO" contentMode="center" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAl-Vp-emN">
                                                                     <rect key="frame" x="231" y="4" width="47" height="36"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="47" id="YVV-xN-Whd"/>
+                                                                    </constraints>
                                                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                     <state key="normal" title="Details"/>
@@ -347,6 +348,11 @@
                                                                     </connections>
                                                                 </button>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="gAl-Vp-emN" firstAttribute="top" secondItem="pWw-3v-ZxI" secondAttribute="topMargin" constant="-7" id="2pI-fD-lmB"/>
+                                                                <constraint firstAttribute="trailing" secondItem="gAl-Vp-emN" secondAttribute="trailing" id="4Tu-cn-9Ve"/>
+                                                                <constraint firstItem="gAl-Vp-emN" firstAttribute="centerY" secondItem="pWw-3v-ZxI" secondAttribute="centerY" constant="1.75" id="gJL-Lc-9Ue"/>
+                                                            </constraints>
                                                         </tableViewCellContentView>
                                                         <connections>
                                                             <outlet property="label" destination="bIk-eU-AMi" id="22F-x8-d2p"/>
@@ -354,7 +360,7 @@
                                                         </connections>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="GQV-xD-c6x" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="93" width="278" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="86.5" width="278" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GQV-xD-c6x" id="UCV-kg-lrV">
                                                             <rect key="frame" x="0.0" y="0.0" width="278" height="43.5"/>
@@ -362,7 +368,7 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="OiF-u4-8Q4" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="136.5" width="278" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="130" width="278" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OiF-u4-8Q4" id="Djm-tH-0TX">
                                                             <rect key="frame" x="0.0" y="0.0" width="278" height="43.5"/>
@@ -370,7 +376,7 @@
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bqA-Ll-VKD" customClass="PlantingsTableViewCell" customModule="PollinatorPathway" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="180" width="278" height="43.5"/>
+                                                        <rect key="frame" x="0.0" y="173.5" width="278" height="43.5"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bqA-Ll-VKD" id="1iU-MI-Akz">
                                                             <rect key="frame" x="0.0" y="0.0" width="278" height="43.5"/>
@@ -583,26 +589,26 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8z-L5-o81">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1100"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Planting Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5II-Ac-EgD">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Planting Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5II-Ac-EgD">
                                                 <rect key="frame" x="86.5" y="28" width="147" height="34"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="heZ-zK-BIy">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="heZ-zK-BIy">
                                                 <rect key="frame" x="54.5" y="225" width="211" height="622"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bee4_2png.png" translatesAutoresizingMaskIntoConstraints="NO" id="VMz-IL-ahf">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bee4_2png.png" translatesAutoresizingMaskIntoConstraints="NO" id="VMz-IL-ahf">
                                                         <rect key="frame" x="0.0" y="0.0" width="211" height="194"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="butterfly1_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aat-Kf-HWt">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="butterfly1_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="aat-Kf-HWt">
                                                         <rect key="frame" x="0.0" y="214" width="211" height="194"/>
                                                     </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bee2_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-IQ-M3q">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bee2_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-IQ-M3q">
                                                         <rect key="frame" x="0.0" y="428" width="211" height="194"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Planting Description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-QP-xdf">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Planting Description" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="W8w-QP-xdf">
                                                 <rect key="frame" x="40" y="70" width="240" height="133"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -612,9 +618,13 @@
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5f-JL-z60">
-                                                <rect key="frame" x="124" y="922" width="72" height="34.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5f-JL-z60">
+                                                <rect key="frame" x="124" y="921.5" width="72" height="34.5"/>
                                                 <color key="backgroundColor" red="0.25434556600000002" green="0.54099386930000004" blue="0.54510420559999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="72" id="KBf-0I-F6Z"/>
+                                                    <constraint firstAttribute="height" constant="34.5" id="vqL-VV-RZk"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Close">
