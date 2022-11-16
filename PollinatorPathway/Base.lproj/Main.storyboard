@@ -338,7 +338,7 @@
                                                                 <button opaque="NO" contentMode="center" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAl-Vp-emN">
                                                                     <rect key="frame" x="231" y="4" width="47" height="32.5"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="47" id="YVV-xN-Whd"/>
+                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="47" id="YVV-xN-Whd"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -454,17 +454,16 @@
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="18345 Campus Way NE," borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQd-M5-f65">
-                                                <rect key="frame" x="8" y="293" width="184" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="18345 Campus Way NE," borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NQd-M5-f65">
+                                                <rect key="frame" x="8" y="293" width="188" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="62k-3y-qkP"/>
-                                                    <constraint firstAttribute="height" constant="34" id="tZx-m9-3ic"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-Ek-nEt">
-                                                <rect key="frame" x="248" y="296" width="51" height="31"/>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qbo-Ek-nEt">
+                                                <rect key="frame" x="252" y="296" width="47" height="31"/>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CIu-oW-QCf">
                                                 <rect key="frame" x="248" y="377" width="51" height="31"/>
@@ -510,7 +509,6 @@
                                             <constraint firstItem="vEH-DE-uML" firstAttribute="top" secondItem="Yof-EQ-bLv" secondAttribute="bottom" constant="8" symbolic="YES" id="FdQ-6T-FCU"/>
                                             <constraint firstItem="vEH-DE-uML" firstAttribute="top" secondItem="Yof-EQ-bLv" secondAttribute="bottom" constant="8" symbolic="YES" id="Ggb-iB-Umi"/>
                                             <constraint firstItem="Oji-VR-wjO" firstAttribute="top" secondItem="O2u-Yk-yjc" secondAttribute="bottom" constant="20" id="K2n-lJ-2H4"/>
-                                            <constraint firstItem="qbo-Ek-nEt" firstAttribute="leading" secondItem="NQd-M5-f65" secondAttribute="trailing" constant="56" id="LfS-1F-skE"/>
                                             <constraint firstAttribute="trailing" secondItem="7vF-mf-nBK" secondAttribute="trailing" constant="209" id="Nx0-OP-oX3"/>
                                             <constraint firstItem="Yof-EQ-bLv" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="OjT-OR-xPQ"/>
                                             <constraint firstItem="O2u-Yk-yjc" firstAttribute="top" secondItem="RJz-sF-4mv" secondAttribute="top" constant="29" id="Pc9-c2-zG7"/>
@@ -518,11 +516,9 @@
                                             <constraint firstItem="pNU-if-PzJ" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="RrM-Nt-mnG"/>
                                             <constraint firstAttribute="bottom" secondItem="sVz-g4-9wR" secondAttribute="bottom" constant="122" id="SSO-z2-eg2"/>
                                             <constraint firstItem="7vF-mf-nBK" firstAttribute="top" secondItem="NQd-M5-f65" secondAttribute="bottom" constant="8" symbolic="YES" id="Thw-Pt-f39"/>
-                                            <constraint firstItem="7vF-mf-nBK" firstAttribute="top" secondItem="NQd-M5-f65" secondAttribute="bottom" constant="8" symbolic="YES" id="VBC-Yg-NCb"/>
                                             <constraint firstItem="NQd-M5-f65" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="X8M-Wa-nWa"/>
                                             <constraint firstItem="NQd-M5-f65" firstAttribute="top" secondItem="zSi-92-as9" secondAttribute="bottom" constant="8" symbolic="YES" id="Zum-Qr-kT5"/>
                                             <constraint firstItem="sVz-g4-9wR" firstAttribute="centerX" secondItem="RJz-sF-4mv" secondAttribute="centerX" id="asm-Zc-c0b"/>
-                                            <constraint firstItem="CIu-oW-QCf" firstAttribute="top" secondItem="qbo-Ek-nEt" secondAttribute="bottom" constant="50" id="dUj-p1-v24"/>
                                             <constraint firstItem="pNU-if-PzJ" firstAttribute="top" secondItem="vEH-DE-uML" secondAttribute="bottom" constant="8" symbolic="YES" id="dlR-Pj-23b"/>
                                             <constraint firstItem="Khy-Zu-rzO" firstAttribute="top" secondItem="7vF-mf-nBK" secondAttribute="bottom" constant="8" symbolic="YES" id="fNH-u7-xsE"/>
                                             <constraint firstAttribute="trailing" secondItem="O2u-Yk-yjc" secondAttribute="trailing" constant="90" id="ifa-G1-WSu"/>
@@ -542,7 +538,6 @@
                                             <constraint firstItem="qbo-Ek-nEt" firstAttribute="top" secondItem="Oji-VR-wjO" secondAttribute="bottom" constant="179" id="xAI-HA-500"/>
                                             <constraint firstItem="CjF-Hg-Dsv" firstAttribute="top" secondItem="RJz-sF-4mv" secondAttribute="top" constant="563" id="xQs-dC-nDG"/>
                                             <constraint firstItem="Oji-VR-wjO" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="xi6-vn-tep"/>
-                                            <constraint firstItem="NQd-M5-f65" firstAttribute="top" secondItem="zSi-92-as9" secondAttribute="bottom" constant="8" symbolic="YES" id="yYb-Io-Tw0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
