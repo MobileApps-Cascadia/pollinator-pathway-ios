@@ -39,7 +39,7 @@ class Existing_User_VC: UIViewController {
     
     func setUpElements(){
         //hide error Label
-        ErrorLabel.alpha = 0
+       // ErrorLabel.alpha = 0
     }
 
     /*
@@ -85,9 +85,6 @@ class Existing_User_VC: UIViewController {
         
     }
     
-    @IBAction func NewUserTapped(_ sender: Any) {
-        
-    }
     
     
     

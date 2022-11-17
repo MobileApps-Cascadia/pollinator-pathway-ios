@@ -27,7 +27,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="6Pc-BC-Ww8">
-                                                <rect key="frame" x="27.5" y="96" width="265" height="327"/>
+                                                <rect key="frame" x="27.5" y="68" width="265" height="383.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GLe-3l-AY5">
                                                         <rect key="frame" x="72.5" y="0.0" width="120" height="28"/>
@@ -45,7 +45,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Mje-tT-mOb">
-                                                        <rect key="frame" x="0.0" y="72" width="265" height="133"/>
+                                                        <rect key="frame" x="0.0" y="72" width="265" height="146.5"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ht8-ZZ-Yz5">
                                                                 <rect key="frame" x="0.0" y="0.0" width="265" height="40"/>
@@ -56,18 +56,17 @@
                                                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0X-K8-a4v">
-                                                                <rect key="frame" x="191" y="56" width="74" height="21"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="Khw-Ur-zNk"/>
-                                                                    <constraint firstAttribute="height" constant="21" id="UXg-gL-6zk"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
-                                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcY-i0-rGv">
+                                                                <rect key="frame" x="182.5" y="56" width="82.5" height="34.5"/>
+                                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Forgot?"/>
+                                                                <connections>
+                                                                    <action selector="ForgotButtonTapped:" destination="ClU-Tk-bSz" eventType="touchUpInside" id="EVe-gf-Z55"/>
+                                                                </connections>
+                                                            </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pic-r0-fW7">
-                                                                <rect key="frame" x="0.0" y="93" width="265" height="40"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="265" height="40"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="40" id="eUx-wo-bdO"/>
                                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="265" id="ype-aQ-i2b"/>
@@ -78,7 +77,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="z4q-99-HYP">
-                                                        <rect key="frame" x="1.5" y="249" width="262" height="78"/>
+                                                        <rect key="frame" x="1.5" y="262.5" width="262" height="121"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxD-Ox-ZDp">
                                                                 <rect key="frame" x="0.0" y="0.0" width="262" height="35"/>
@@ -93,7 +92,7 @@
                                                                     <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <segue destination="UcM-YA-mNN" kind="show" id="t79-Vu-Yq9"/>
+                                                                    <action selector="loginButtonTapped:" destination="ClU-Tk-bSz" eventType="touchUpInside" id="G1B-ek-z72"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0br-j4-vjk">
@@ -107,7 +106,16 @@
                                                                     <fontDescription key="titleFontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                                                 </buttonConfiguration>
                                                             </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06C-Uy-FOd">
+                                                                <rect key="frame" x="0.0" y="86" width="262" height="35"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                                                <color key="textColor" systemColor="systemRedColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="06C-Uy-FOd" firstAttribute="height" secondItem="0br-j4-vjk" secondAttribute="height" id="nNC-0x-Q9M"/>
+                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
@@ -130,10 +138,18 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Existing Login" image="person.fill" catalog="system" id="qKb-gU-KRq"/>
+                    <connections>
+                        <outlet property="EmailTextField" destination="ht8-ZZ-Yz5" id="z1m-sJ-5gS"/>
+                        <outlet property="ErrorLabel" destination="06C-Uy-FOd" id="mzK-Iw-dq7"/>
+                        <outlet property="ForgotButton" destination="bcY-i0-rGv" id="e7o-XY-Xj5"/>
+                        <outlet property="LoginButton" destination="YxD-Ox-ZDp" id="bWS-Vs-W8c"/>
+                        <outlet property="NewUserButton" destination="0br-j4-vjk" id="R79-i7-S3i"/>
+                        <outlet property="PasswordTextField" destination="Pic-r0-fW7" id="iK9-Px-anD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ouX-zC-IP4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-371.25" y="54.929577464788736"/>
+            <point key="canvasLocation" x="-278" y="259"/>
         </scene>
         <!--New User Setup-->
         <scene sceneID="a25-hh-KQO">
@@ -294,11 +310,11 @@
                         <viewControllerLayoutGuide type="bottom" id="B7I-KX-o3N"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="vha-Z5-SZI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZMn-Gm-BbV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJz-sF-4mv">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
@@ -555,7 +571,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wiy-yT-gwE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="378.75" y="54.929577464788736"/>
+            <point key="canvasLocation" x="360" y="169"/>
         </scene>
         <!--PlantingVC-->
         <scene sceneID="y87-ld-YdV">
@@ -671,6 +687,12 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
