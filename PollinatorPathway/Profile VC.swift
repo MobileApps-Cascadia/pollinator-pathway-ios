@@ -18,7 +18,7 @@ class ProfileVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     return cell
     }
     
-
+    
     
     @IBOutlet weak var tableView: UITableView!
 
