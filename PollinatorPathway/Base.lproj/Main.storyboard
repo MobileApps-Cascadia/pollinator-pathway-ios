@@ -411,7 +411,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bothell, WA" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7vF-mf-nBK">
-                                                <rect key="frame" x="8" y="335" width="103" height="34"/>
+                                                <rect key="frame" x="8" y="335" width="188" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="4wS-PM-hlj"/>
                                                 </constraints>
@@ -419,7 +419,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="GPS" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Khy-Zu-rzO">
-                                                <rect key="frame" x="8" y="377" width="56" height="34"/>
+                                                <rect key="frame" x="8" y="377" width="188" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="DY0-Gw-2pr"/>
                                                 </constraints>
@@ -427,7 +427,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BetterBuzz@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yof-EQ-bLv">
-                                                <rect key="frame" x="8" y="125" width="179" height="34"/>
+                                                <rect key="frame" x="8" y="125" width="271" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="IF0-Lv-kze"/>
                                                 </constraints>
@@ -435,7 +435,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(206)000-0000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vEH-DE-uML">
-                                                <rect key="frame" x="8" y="167" width="132" height="34"/>
+                                                <rect key="frame" x="8" y="167" width="271" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="zqa-tL-QNH"/>
                                                 </constraints>
@@ -443,7 +443,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Facebook:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pNU-if-PzJ">
-                                                <rect key="frame" x="8" y="209" width="95" height="34"/>
+                                                <rect key="frame" x="8" y="209" width="188" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="Kfr-qO-KhQ"/>
                                                 </constraints>
@@ -451,7 +451,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Instagram:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zSi-92-as9">
-                                                <rect key="frame" x="8" y="251" width="97" height="34"/>
+                                                <rect key="frame" x="8" y="251" width="188" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="UZX-il-auX"/>
                                                 </constraints>
@@ -502,15 +502,15 @@
                                             <constraint firstItem="qbo-Ek-nEt" firstAttribute="leading" secondItem="NQd-M5-f65" secondAttribute="trailing" constant="56" id="77Y-j2-nPb"/>
                                             <constraint firstAttribute="trailing" secondItem="CIu-oW-QCf" secondAttribute="trailing" constant="23" id="8d9-IM-gbO"/>
                                             <constraint firstItem="CjF-Hg-Dsv" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="21" id="98f-0y-EFG"/>
-                                            <constraint firstAttribute="trailing" secondItem="Yof-EQ-bLv" secondAttribute="trailing" constant="133" id="A0p-YD-KvI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yof-EQ-bLv" secondAttribute="trailing" constant="41" id="A0p-YD-KvI"/>
                                             <constraint firstItem="zSi-92-as9" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="BIb-TD-5he"/>
                                             <constraint firstItem="vEH-DE-uML" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="DD0-hf-jFE"/>
                                             <constraint firstItem="O2u-Yk-yjc" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="90" id="E7H-JL-0CA"/>
-                                            <constraint firstItem="CIu-oW-QCf" firstAttribute="leading" secondItem="Khy-Zu-rzO" secondAttribute="trailing" constant="184" id="EcN-wr-wF4"/>
+                                            <constraint firstItem="CIu-oW-QCf" firstAttribute="leading" secondItem="Khy-Zu-rzO" secondAttribute="trailing" constant="52" id="EcN-wr-wF4"/>
                                             <constraint firstItem="CjF-Hg-Dsv" firstAttribute="centerX" secondItem="O2u-Yk-yjc" secondAttribute="centerX" id="FOm-QF-jWk"/>
                                             <constraint firstItem="vEH-DE-uML" firstAttribute="top" secondItem="Yof-EQ-bLv" secondAttribute="bottom" constant="8" symbolic="YES" id="Ggb-iB-Umi"/>
                                             <constraint firstItem="Oji-VR-wjO" firstAttribute="top" secondItem="O2u-Yk-yjc" secondAttribute="bottom" constant="20" id="K2n-lJ-2H4"/>
-                                            <constraint firstAttribute="trailing" secondItem="7vF-mf-nBK" secondAttribute="trailing" constant="209" id="Nx0-OP-oX3"/>
+                                            <constraint firstAttribute="trailing" secondItem="7vF-mf-nBK" secondAttribute="trailing" constant="124" id="Nx0-OP-oX3"/>
                                             <constraint firstItem="Yof-EQ-bLv" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="OjT-OR-xPQ"/>
                                             <constraint firstItem="O2u-Yk-yjc" firstAttribute="top" secondItem="RJz-sF-4mv" secondAttribute="top" constant="29" id="Pc9-c2-zG7"/>
                                             <constraint firstItem="zSi-92-as9" firstAttribute="top" secondItem="pNU-if-PzJ" secondAttribute="bottom" constant="8" symbolic="YES" id="QTf-vh-TnY"/>
@@ -524,13 +524,13 @@
                                             <constraint firstItem="Khy-Zu-rzO" firstAttribute="top" secondItem="7vF-mf-nBK" secondAttribute="bottom" constant="8" symbolic="YES" id="fNH-u7-xsE"/>
                                             <constraint firstAttribute="trailing" secondItem="O2u-Yk-yjc" secondAttribute="trailing" constant="90" id="ifa-G1-WSu"/>
                                             <constraint firstItem="CjF-Hg-Dsv" firstAttribute="centerX" secondItem="UaV-iM-CK5" secondAttribute="centerX" id="jRS-SI-ff8"/>
-                                            <constraint firstAttribute="trailing" secondItem="zSi-92-as9" secondAttribute="trailing" constant="215" id="jRz-Nq-C6n"/>
+                                            <constraint firstAttribute="trailing" secondItem="zSi-92-as9" secondAttribute="trailing" constant="124" id="jRz-Nq-C6n"/>
                                             <constraint firstAttribute="height" constant="1000" id="ktF-7A-mK1"/>
                                             <constraint firstAttribute="trailing" secondItem="Oji-VR-wjO" secondAttribute="trailing" constant="41" id="l2E-3m-Jc6"/>
                                             <constraint firstItem="Khy-Zu-rzO" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="lm5-iC-Qdg"/>
-                                            <constraint firstAttribute="trailing" secondItem="vEH-DE-uML" secondAttribute="trailing" constant="180" id="obT-FB-3be"/>
+                                            <constraint firstAttribute="trailing" secondItem="vEH-DE-uML" secondAttribute="trailing" constant="41" id="obT-FB-3be"/>
                                             <constraint firstItem="CIu-oW-QCf" firstAttribute="top" secondItem="qbo-Ek-nEt" secondAttribute="bottom" constant="50" id="qBD-4T-VLX"/>
-                                            <constraint firstAttribute="trailing" secondItem="pNU-if-PzJ" secondAttribute="trailing" constant="217" id="th5-5r-4CO"/>
+                                            <constraint firstAttribute="trailing" secondItem="pNU-if-PzJ" secondAttribute="trailing" constant="124" id="th5-5r-4CO"/>
                                             <constraint firstItem="7vF-mf-nBK" firstAttribute="leading" secondItem="RJz-sF-4mv" secondAttribute="leading" constant="8" id="wOm-Pl-Lhn"/>
                                             <constraint firstItem="qbo-Ek-nEt" firstAttribute="top" secondItem="Oji-VR-wjO" secondAttribute="bottom" constant="179" id="xAI-HA-500"/>
                                             <constraint firstItem="CjF-Hg-Dsv" firstAttribute="top" secondItem="RJz-sF-4mv" secondAttribute="top" constant="563" id="xQs-dC-nDG"/>
