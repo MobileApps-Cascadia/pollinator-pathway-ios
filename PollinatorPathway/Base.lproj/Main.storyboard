@@ -286,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="16E-og-ryQ">
-                                <rect key="frame" x="46" y="30" width="228" height="391.5"/>
+                                <rect key="frame" x="46" y="30" width="228" height="372"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R E G I S T E R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tur-hi-Z59">
                                         <rect key="frame" x="0.0" y="0.0" width="228" height="31.5"/>
@@ -323,9 +323,12 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="SignUpButtonTapped:" destination="236-mD-8ug" eventType="touchUpInside" id="oLL-T3-l5g"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmU-nI-kEV">
-                                        <rect key="frame" x="0.0" y="351.5" width="228" height="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmU-nI-kEV">
+                                        <rect key="frame" x="0.0" y="351.5" width="228" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -333,7 +336,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Y6a-5J-Y7d" firstAttribute="height" secondItem="IeB-9C-9yM" secondAttribute="height" id="4hx-dM-Rc0"/>
-                                    <constraint firstItem="RmU-nI-kEV" firstAttribute="height" secondItem="IeB-9C-9yM" secondAttribute="height" id="7RG-Wj-ROX"/>
                                     <constraint firstItem="2Ni-yy-t9J" firstAttribute="height" secondItem="IeB-9C-9yM" secondAttribute="height" id="GZF-0r-yus"/>
                                     <constraint firstItem="yIT-vT-zB7" firstAttribute="height" secondItem="IeB-9C-9yM" secondAttribute="height" id="XfS-nn-64a"/>
                                     <constraint firstItem="slw-mq-vb3" firstAttribute="height" secondItem="IeB-9C-9yM" secondAttribute="height" id="fpJ-kD-mGu"/>

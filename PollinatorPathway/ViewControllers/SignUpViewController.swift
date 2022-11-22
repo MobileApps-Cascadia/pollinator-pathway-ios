@@ -122,8 +122,6 @@ class SignUpViewController: UIViewController {
                     self.transitionToHome()
                 }
             }
-            
-            
         }
     }
     
@@ -132,11 +130,13 @@ class SignUpViewController: UIViewController {
         ErrorLabel.alpha = 1
     }
     
+    
     func transitionToHome() {
-       let profileViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileVC
-        
-        view.window?.rootViewController = profileViewController
-        view.window?.makeKeyAndVisible()
+        let profileViewController =
+            self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.profileViewController) as? ProfileVC
+         
+            self.view.window?.rootViewController = profileViewController
+            self.view.window?.makeKeyAndVisible()
     }
     
 }
