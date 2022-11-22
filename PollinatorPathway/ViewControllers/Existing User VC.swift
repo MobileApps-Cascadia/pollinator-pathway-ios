@@ -39,7 +39,7 @@ class Existing_User_VC: UIViewController {
     
     func setUpElements(){
         //hide error Label
-       // ErrorLabel.alpha = 0
+        ErrorLabel.alpha = 0
     }
 
     /*
@@ -55,6 +55,17 @@ class Existing_User_VC: UIViewController {
 
     @IBAction func ForgotButtonTapped(_ sender: Any) {
     }
+    
+    
+//    @IBAction func SignUpButtonTapped(_ sender: Any) {
+//            let signUpViewController =
+//                self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.signUpViewController) as? SignUpViewController
+//
+//                self.view.window?.rootViewController = signUpViewController
+//                self.view.window?.makeKeyAndVisible()
+//
+//    }
+    
     
     
     @IBAction func loginButtonTapped(_ sender: Any) {
@@ -84,8 +95,4 @@ class Existing_User_VC: UIViewController {
         }
         
     }
-    
-    
-    
-    
 }
