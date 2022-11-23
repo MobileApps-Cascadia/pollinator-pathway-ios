@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -13,44 +13,49 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
-                                <rect key="frame" x="16.333333333333343" y="144" width="381.66666666666663" height="608"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="3cy-km-EqT">
+                                <rect key="frame" x="7" y="46.5" width="572" height="387"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="emblem" translatesAutoresizingMaskIntoConstraints="NO" id="zBP-hr-t6h">
-                                        <rect key="frame" x="40.666666666666686" y="0.0" width="300" height="530.33333333333337"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0o-dp-H63">
-                                        <rect key="frame" x="0.0" y="587.33333333333337" width="381.66666666666669" height="20.666666666666629"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6xU-qS-jQj">
+                                        <rect key="frame" x="161" y="0.0" width="250" height="332.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="emblem.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4H-hq-N9s">
+                                                <rect key="frame" x="0.0" y="41.5" width="250" height="250"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Pacific Northwest Pollinator Pathway" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000000000000004" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" id="F0o-dp-H63">
+                                        <rect key="frame" x="31.5" y="359.5" width="509" height="27.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <variation key="widthClass=regular" axis="horizontal" spacing="10"/>
+                                <variation key="widthClass=regular" axis="horizontal"/>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="IGV-dm-7Gu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CnH-Tx-hHu"/>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Wqy-yn-KAm">
-                                <variation key="widthClass=regular" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fwA-P6-oE5"/>
+                            <constraint firstAttribute="trailing" secondItem="3cy-km-EqT" secondAttribute="trailing" id="3KQ-HS-xpb"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="top" relation="lessThanOrEqual" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="57" id="9Ty-Y7-FtF"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="7" id="Zo7-CW-DJl"/>
+                            <constraint firstItem="3cy-km-EqT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fml-MI-h4T"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="51.760563380281688" y="375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="emblem" width="300" height="268"/>
+        <image name="emblem.png" width="250" height="250"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
