@@ -807,7 +807,7 @@
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tjQ-B7-ojn">
                                         <rect key="frame" x="8" y="8" width="398" height="643"/>
-                                        <color key="backgroundColor" red="0.2460331321" green="0.51347249750000001" blue="0.52157497409999998" alpha="0.55828827106400036" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.56233394150000005" green="0.74229425189999998" blue="0.3410813808" alpha="0.52908274669520905" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="separatorColor" red="0.1139586642" green="0.10538639869999999" blue="0.12941479680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <prototypes>
@@ -818,7 +818,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="398" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" red="0.40259604789409531" green="0.85064723209483795" blue="0.87524158244842176" alpha="0.64879936571942265" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.92891252040000005" green="0.82444399599999996" blue="0.48619455099999997" alpha="0.74682465610125204" colorSpace="custom" customColorSpace="displayP3"/>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
