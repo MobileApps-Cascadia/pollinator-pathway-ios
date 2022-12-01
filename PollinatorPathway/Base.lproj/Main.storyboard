@@ -94,10 +94,29 @@
                                                     <constraint firstItem="GRk-8f-9je" firstAttribute="height" secondItem="BFi-kf-Fb7" secondAttribute="height" id="vjV-vU-AsC"/>
                                                 </constraints>
                                             </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRI-p8-0XX">
+                                                <rect key="frame" x="270" y="595" width="120" height="40"/>
+                                                <color key="backgroundColor" red="0.25808754560000002" green="0.54099464419999999" blue="0.54510414600000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="ojE-dc-DlS"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="xXl-Kn-4Xq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Forum">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="9qS-uW-EJ0" kind="show" id="p9F-7P-asi"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="0.2007988131776148" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="eRI-p8-0XX" secondAttribute="bottom" constant="52" id="5wt-7Z-xTV"/>
+                                            <constraint firstItem="eRI-p8-0XX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5hE-aw-Ws6" secondAttribute="leading" constant="20" symbolic="YES" id="TWi-N5-Y3i"/>
                                             <constraint firstAttribute="trailing" secondItem="4p3-kE-Nb5" secondAttribute="trailing" constant="30" id="ZSd-bH-Ag4"/>
+                                            <constraint firstAttribute="trailing" secondItem="eRI-p8-0XX" secondAttribute="trailing" constant="24" id="cTP-BI-tt5"/>
                                             <constraint firstItem="4p3-kE-Nb5" firstAttribute="top" secondItem="5hE-aw-Ws6" secondAttribute="top" constant="40" id="vel-SL-IeT"/>
                                             <constraint firstItem="4p3-kE-Nb5" firstAttribute="leading" secondItem="5hE-aw-Ws6" secondAttribute="leading" constant="30" id="yh3-lX-aYB"/>
                                         </constraints>
@@ -771,6 +790,69 @@
             </objects>
             <point key="canvasLocation" x="1100.625" y="44.366197183098592"/>
         </scene>
+        <!--Forum Bar-->
+        <scene sceneID="7ZH-6P-nP3">
+            <objects>
+                <viewController id="9qS-uW-EJ0" customClass="Forum_VC" customModule="PollinatorPathway" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nZV-BP-ADP"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Nk-Aq-ARi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RXq-zq-WYm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kNI-uH-x1G">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="659"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tjQ-B7-ojn">
+                                        <rect key="frame" x="8" y="8" width="398" height="643"/>
+                                        <color key="backgroundColor" red="0.56233394150000005" green="0.74229425189999998" blue="0.3410813808" alpha="0.52908274669520905" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="separatorColor" red="0.1139586642" green="0.10538639869999999" blue="0.12941479680000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="GP3-Dq-0KH">
+                                                <rect key="frame" x="0.0" y="44.666666030883789" width="398" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GP3-Dq-0KH" id="FSG-Hd-lNp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.92891252040000005" green="0.82444399599999996" blue="0.48619455099999997" alpha="0.74682465610125204" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86291640999999997" green="0.95432037120000002" blue="0.87450009579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tjQ-B7-ojn" secondAttribute="trailing" constant="8" id="2xM-4O-Qdr"/>
+                                    <constraint firstItem="tjQ-B7-ojn" firstAttribute="leading" secondItem="kNI-uH-x1G" secondAttribute="leading" constant="8" id="Jbf-yP-Ids"/>
+                                    <constraint firstAttribute="bottom" secondItem="tjQ-B7-ojn" secondAttribute="bottom" constant="8" id="Nwz-74-GgI"/>
+                                    <constraint firstItem="tjQ-B7-ojn" firstAttribute="top" secondItem="kNI-uH-x1G" secondAttribute="top" constant="8" id="YQ0-9c-QsN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kNI-uH-x1G" firstAttribute="leading" secondItem="RXq-zq-WYm" secondAttribute="leading" id="HWL-pC-uVW"/>
+                            <constraint firstItem="kNI-uH-x1G" firstAttribute="top" secondItem="nZV-BP-ADP" secondAttribute="bottom" id="jCM-Bc-drN"/>
+                            <constraint firstItem="7Nk-Aq-ARi" firstAttribute="top" secondItem="kNI-uH-x1G" secondAttribute="bottom" constant="8" symbolic="YES" id="kLK-3Z-0Zb"/>
+                            <constraint firstAttribute="trailing" secondItem="kNI-uH-x1G" secondAttribute="trailing" id="pDy-yq-EJA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Forum Bar" image="note.text" catalog="system" id="Szp-QM-N1t">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="bft-Ay-9fg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="tjQ-B7-ojn" id="Eb3-3e-dri"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Qs-Ea-GuW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1166.6666666666667" y="925.27173913043487"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bee1_2.png" width="211" height="194"/>
@@ -778,6 +860,7 @@
         <image name="bee4_2png.png" width="211" height="194"/>
         <image name="butterfly1_2.png" width="211" height="194"/>
         <image name="map.fill" catalog="system" width="128" height="110"/>
+        <image name="note.text" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <systemColor name="labelColor">
