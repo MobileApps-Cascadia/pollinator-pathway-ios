@@ -296,8 +296,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="16E-og-ryQ">
-                                <rect key="frame" x="50" y="30" width="314" height="377.66666666666669"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="16E-og-ryQ">
+                                <rect key="frame" x="50" y="30" width="314" height="625.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R E G I S T E R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tur-hi-Z59">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="34.333333333333336"/>
@@ -306,30 +306,65 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="FirstName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IeB-9C-9yM">
-                                        <rect key="frame" x="0.0" y="54.333333333333329" width="314" height="40"/>
+                                        <rect key="frame" x="0.0" y="44.333333333333329" width="314" height="40"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yIT-vT-zB7">
-                                        <rect key="frame" x="0.0" y="114.33333333333334" width="314" height="40"/>
+                                        <rect key="frame" x="0.0" y="94.333333333333329" width="314" height="39.999999999999986"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="slw-mq-vb3">
-                                        <rect key="frame" x="0.0" y="174.33333333333334" width="314" height="40"/>
+                                        <rect key="frame" x="0.0" y="144.33333333333334" width="314" height="40"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Ni-yy-t9J">
-                                        <rect key="frame" x="0.0" y="234.33333333333331" width="314" height="40"/>
+                                        <rect key="frame" x="0.0" y="194.33333333333334" width="314" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="SbB-aQ-pLt"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="website" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-Ci-32T">
+                                        <rect key="frame" x="0.0" y="244.33333333333331" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lcg-JK-Qnb">
+                                        <rect key="frame" x="0.0" y="288.33333333333331" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="812-27-eGI">
+                                        <rect key="frame" x="0.0" y="332.33333333333331" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="city" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZpC-Ts-57J">
+                                        <rect key="frame" x="0.0" y="376.33333333333331" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="state" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-il-ZwX">
+                                        <rect key="frame" x="0.0" y="420.33333333333331" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="zip code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DjN-1P-8q3">
+                                        <rect key="frame" x="0.0" y="464.33333333333331" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="gps" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bC-fh-Ccb">
+                                        <rect key="frame" x="0.0" y="508.33333333333337" width="314" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6a-5J-Y7d">
-                                        <rect key="frame" x="0.0" y="294.33333333333331" width="314" height="40"/>
+                                        <rect key="frame" x="0.0" y="552.33333333333337" width="314" height="40"/>
                                         <color key="backgroundColor" red="0.25655168290000002" green="0.54099285600000002" blue="0.54510313269999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="20"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -340,7 +375,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmU-nI-kEV">
-                                        <rect key="frame" x="0.0" y="354.33333333333331" width="314" height="23.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="602.33333333333337" width="314" height="23.333333333333371"/>
                                         <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="17"/>
                                         <color key="textColor" systemColor="systemRedColor"/>
                                         <nil key="highlightedColor"/>
@@ -366,12 +401,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="7jf-cE-bas"/>
                     <connections>
+                        <outlet property="AddressTextField" destination="812-27-eGI" id="lCN-Qk-LNh"/>
+                        <outlet property="CityTextField" destination="ZpC-Ts-57J" id="6E6-1o-VgV"/>
                         <outlet property="EmailTextField" destination="slw-mq-vb3" id="479-8X-bhs"/>
                         <outlet property="ErrorLabel" destination="RmU-nI-kEV" id="xNI-YF-jl8"/>
                         <outlet property="FirstNameTextField" destination="IeB-9C-9yM" id="fRP-V2-Msu"/>
+                        <outlet property="GpsTextField" destination="7bC-fh-Ccb" id="ddB-uW-rGB"/>
                         <outlet property="LastNameTextField" destination="yIT-vT-zB7" id="2ln-vl-q8c"/>
                         <outlet property="PasswordTextField" destination="2Ni-yy-t9J" id="vNN-dT-KZ5"/>
+                        <outlet property="PhoneTextField" destination="Lcg-JK-Qnb" id="Q91-xv-lvY"/>
                         <outlet property="SignUpButton" destination="Y6a-5J-Y7d" id="lEd-g4-lKa"/>
+                        <outlet property="StateTextField" destination="5kn-il-ZwX" id="qAc-ev-PPv"/>
+                        <outlet property="WebsiteTextField" destination="TtK-Ci-32T" id="ita-Vw-XaV"/>
+                        <outlet property="ZipcodeTextField" destination="DjN-1P-8q3" id="2LR-R9-nwi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PYJ-ih-FjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

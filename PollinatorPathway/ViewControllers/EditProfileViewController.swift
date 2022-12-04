@@ -6,6 +6,11 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
+
 
 class EditProfileViewController: UIViewController {
     
@@ -49,6 +54,8 @@ class EditProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+       
     }
     
 
@@ -62,10 +69,30 @@ class EditProfileViewController: UIViewController {
     }
     */
     
-    
     @IBAction func SubmitButtonTapped(_ sender: Any) {
         
+        
+        
+        let website = websiteTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let phone = PhoneTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let address = AddressTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let city = CityTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let state = StateTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let zipcode = ZipCodeTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let gps = GpsTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            let db = Firestore.firestore()
+            let user = Auth.auth().currentUser
+            let uid = user?.uid ?? ""
+        
+            let ref = db.collection("users").document("infos")
+        
+        ref.setData(["uid": uid, "website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode, "gps": gps ]) { error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+            }
+        }
     }
-    
-
 }
+
