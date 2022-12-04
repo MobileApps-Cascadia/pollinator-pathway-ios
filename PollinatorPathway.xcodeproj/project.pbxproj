@@ -45,6 +45,7 @@
 		3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F941B142818A02D00D9A8B2 /* Live Map VC.swift */; };
 		3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC4A44283DA01200404C2E /* Profile VC.swift */; };
 		3FAC4AC8284558FB00404C2E /* PlantingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */; };
+		3FB6CEDE292EEE780060245A /* ForumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEDD292EEE780060245A /* ForumVC.swift */; };
 		3FEC49B5293532420028D448 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEC49B4293532420028D448 /* EditProfileViewController.swift */; };
 		3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6446280CAD0100030ABD /* AppDelegate.swift */; };
 		3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6448280CAD0100030ABD /* SceneDelegate.swift */; };
@@ -93,6 +94,7 @@
 		3F941B142818A02D00D9A8B2 /* Live Map VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Live Map VC.swift"; sourceTree = "<group>"; };
 		3FAC4A44283DA01200404C2E /* Profile VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile VC.swift"; sourceTree = "<group>"; };
 		3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantingsTableViewCell.swift; sourceTree = "<group>"; };
+		3FB6CEDD292EEE780060245A /* ForumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumVC.swift; sourceTree = "<group>"; };
 		3FEC49B4293532420028D448 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		3FFF6443280CAD0100030ABD /* PollinatorPathway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollinatorPathway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF6446280CAD0100030ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
 				3F2DB5702909E33A0013A056 /* SignUpViewController.swift */,
+				3FB6CEDD292EEE780060245A /* ForumVC.swift */,
 				3FEC49B4293532420028D448 /* EditProfileViewController.swift */,
 			);
 			path = ViewControllers;
@@ -216,8 +219,8 @@
 				3FFF6446280CAD0100030ABD /* AppDelegate.swift */,
 				3FFF6448280CAD0100030ABD /* SceneDelegate.swift */,
 				3F2DB5742909E3690013A056 /* ViewControllers */,
-				3FFF644C280CAD0100030ABD /* Main.storyboard */,
 				3F539BCE29085EE70066F841 /* Scanner VC.swift */,
+				3FFF644C280CAD0100030ABD /* Main.storyboard */,
 				3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */,
 				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
 				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
@@ -442,6 +445,7 @@
 				3F2DB5712909E33A0013A056 /* SignUpViewController.swift in Sources */,
 				3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */,
 				3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */,
+				3FB6CEDE292EEE780060245A /* ForumVC.swift in Sources */,
 				3F2EA19C290C8807006520A3 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
