@@ -8,6 +8,9 @@
 import UIKit
 import FirebaseAuth
 import Firebase
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -22,6 +25,28 @@ class SignUpViewController: UIViewController {
     
     
     @IBOutlet weak var PasswordTextField: UITextField!
+    
+    
+    @IBOutlet weak var WebsiteTextField: UITextField!
+    
+    
+    @IBOutlet weak var PhoneTextField: UITextField!
+    
+    
+    @IBOutlet weak var AddressTextField: UITextField!
+    
+    
+    @IBOutlet weak var CityTextField: UITextField!
+    
+    
+    @IBOutlet weak var StateTextField: UITextField!
+    
+    
+    @IBOutlet weak var ZipcodeTextField: UITextField!
+    
+    
+    @IBOutlet weak var GpsTextField: UITextField!
+    
     
     
     
@@ -42,7 +67,7 @@ class SignUpViewController: UIViewController {
         //hide error Label
         ErrorLabel.alpha = 0
     }
-
+    
     /*
     // MARK: - Navigation
 
@@ -52,7 +77,7 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
+
     // Check the fields and validate the data entered
     //If correct, returns nil
     //If not, returns the error message
@@ -78,7 +103,6 @@ class SignUpViewController: UIViewController {
         return nil
     }
     
-    
     @IBAction func SignUpButtonTapped(_ sender: Any) {
         
         // Validate the fields
@@ -96,7 +120,7 @@ class SignUpViewController: UIViewController {
             let lastName = LastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = EmailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = PasswordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            
+          
             
             // Create the new user
             Auth.auth().createUser(withEmail: email, password: password){ (result, err) in
@@ -116,6 +140,7 @@ class SignUpViewController: UIViewController {
                         if error != nil {
                             // Show error message
                             self.showError("Error saving user data")
+                            
                         }
                     }
                     // Transition to the home screen
@@ -129,7 +154,7 @@ class SignUpViewController: UIViewController {
         ErrorLabel.text = message
         ErrorLabel.alpha = 1
     }
-    
+
     
     func transitionToHome() {
         let profileViewController =
@@ -138,5 +163,4 @@ class SignUpViewController: UIViewController {
             self.view.window?.rootViewController = profileViewController
             self.view.window?.makeKeyAndVisible()
     }
-    
 }
