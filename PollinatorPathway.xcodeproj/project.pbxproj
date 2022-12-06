@@ -48,6 +48,8 @@
 		3FB6CEDE292EEE780060245A /* ForumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEDD292EEE780060245A /* ForumVC.swift */; };
 		3FB6CEE2293E78170060245A /* RedditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEE1293E78170060245A /* RedditVC.swift */; };
 		3FB6CEE4293ECD700060245A /* YoutubeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEE3293ECD700060245A /* YoutubeVC.swift */; };
+		3FB6CEE6293ECFA70060245A /* TwitterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEE5293ECFA70060245A /* TwitterVC.swift */; };
+		3FB6CEE8293ECFFE0060245A /* FacebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEE7293ECFFE0060245A /* FacebookVC.swift */; };
 		3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6446280CAD0100030ABD /* AppDelegate.swift */; };
 		3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6448280CAD0100030ABD /* SceneDelegate.swift */; };
 		3FFF644E280CAD0100030ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF644C280CAD0100030ABD /* Main.storyboard */; };
@@ -98,6 +100,8 @@
 		3FB6CEDD292EEE780060245A /* ForumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumVC.swift; sourceTree = "<group>"; };
 		3FB6CEE1293E78170060245A /* RedditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditVC.swift; sourceTree = "<group>"; };
 		3FB6CEE3293ECD700060245A /* YoutubeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVC.swift; sourceTree = "<group>"; };
+		3FB6CEE5293ECFA70060245A /* TwitterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterVC.swift; sourceTree = "<group>"; };
+		3FB6CEE7293ECFFE0060245A /* FacebookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookVC.swift; sourceTree = "<group>"; };
 		3FFF6443280CAD0100030ABD /* PollinatorPathway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollinatorPathway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF6446280CAD0100030ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFF6448280CAD0100030ABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				3FB6CEDD292EEE780060245A /* ForumVC.swift */,
 				3FB6CEE1293E78170060245A /* RedditVC.swift */,
 				3FB6CEE3293ECD700060245A /* YoutubeVC.swift */,
+				3FB6CEE5293ECFA70060245A /* TwitterVC.swift */,
+				3FB6CEE7293ECFFE0060245A /* FacebookVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -442,11 +448,13 @@
 				3F2EA1612909F2A0006520A3 /* Utilities.swift in Sources */,
 				442ECECB28E63B8C00869252 /* Planting VC.swift in Sources */,
 				3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */,
+				3FB6CEE6293ECFA70060245A /* TwitterVC.swift in Sources */,
 				3FB6CEE2293E78170060245A /* RedditVC.swift in Sources */,
 				3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */,
 				3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */,
 				3F2DB5712909E33A0013A056 /* SignUpViewController.swift in Sources */,
 				3F941B132818A01C00D9A8B2 /* Existing User VC.swift in Sources */,
+				3FB6CEE8293ECFFE0060245A /* FacebookVC.swift in Sources */,
 				3FAC4A45283DA01200404C2E /* Profile VC.swift in Sources */,
 				3FB6CEDE292EEE780060245A /* ForumVC.swift in Sources */,
 				3FB6CEE4293ECD700060245A /* YoutubeVC.swift in Sources */,
