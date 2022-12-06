@@ -17,7 +17,20 @@ class Live_Map_VC: UIViewController {
         
         let initialLocation = CLLocation(latitude: 47.7590, longitude: -122.1907)
         mapView.centerToLocation(initialLocation)
-        // Do any additional setup after loading the view.
+        
+        //Sample Locations
+        
+        // Cascadia Garden
+        
+        let cascadia = MKPointAnnotation()
+        cascadia.title = "Cascadia College"
+        cascadia.coordinate = CLLocationCoordinate2D(latitude: 47.7590, longitude: -122.1907)
+        mapView.addAnnotation(cascadia)
+        
+        let testChurch = MKPointAnnotation()
+        testChurch.title = "Test Church 1"
+        testChurch.coordinate = CLLocationCoordinate2D(latitude: 47.7540, longitude: -122.2107)
+        mapView.addAnnotation(testChurch)
     }
 }
     private extension MKMapView {
