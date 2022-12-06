@@ -11,7 +11,7 @@ import SwiftUI
 import UIKit
 import WebKit
 
-class Support_VC: UIViewController, WKUIDelegate{
+class Reddit_VC: UIViewController, WKUIDelegate{
     var webView: WKWebView!
     
         
