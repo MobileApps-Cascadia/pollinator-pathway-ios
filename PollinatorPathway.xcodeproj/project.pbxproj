@@ -442,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FEC49B5293532420028D448 /* EditProfileViewController.swift in Sources */,
 				3F539BCF29085EE70066F841 /* Scanner VC.swift in Sources */,
 				3FAC4AC8284558FB00404C2E /* PlantingsTableViewCell.swift in Sources */,
 				3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */,
