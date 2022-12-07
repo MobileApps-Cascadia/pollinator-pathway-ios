@@ -83,7 +83,6 @@ class EditProfileViewController: UIViewController {
     
     @IBAction func SubmitButtonTapped(_ sender: Any) {
         
-        
         guard let userID = Auth.auth().currentUser?.uid else { return }
         guard let website = websiteTextField.text, !website.isEmpty else { return }
         guard let phone = PhoneTextField.text, !phone.isEmpty else { return }
@@ -92,6 +91,7 @@ class EditProfileViewController: UIViewController {
         guard let state = StateTextField.text, !state.isEmpty else { return }
         guard let zipcode = ZipCodeTextField.text, !zipcode.isEmpty else { return }
         guard let gps = GpsTextField.text, !gps.isEmpty else { return }
+        
         
         let dataToSave: [String: Any] = ["uid": userID,  "website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode, "gps": gps ]
         
