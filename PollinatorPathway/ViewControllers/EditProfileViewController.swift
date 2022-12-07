@@ -10,7 +10,6 @@ import Firebase
 import FirebaseCore
 import FirebaseFirestore
 
-
 class EditProfileViewController: UIViewController {
     
     
@@ -49,7 +48,6 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var SubmitButton: UIButton!
     
     var docRef: DocumentReference!
-    
     
     
     @IBOutlet weak var successMessage: UILabel!
@@ -104,7 +102,7 @@ class EditProfileViewController: UIViewController {
             }
         }
         
-        }
+    }
     
     func showError(_ message:String) {
         successMessage.text = message
