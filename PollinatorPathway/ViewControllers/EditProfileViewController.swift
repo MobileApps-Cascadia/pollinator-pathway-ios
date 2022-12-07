@@ -9,7 +9,6 @@ import UIKit
 import Firebase
 import FirebaseCore
 import FirebaseFirestore
-import FirebaseAuth
 
 
 class EditProfileViewController: UIViewController {
@@ -49,13 +48,27 @@ class EditProfileViewController: UIViewController {
     
     @IBOutlet weak var SubmitButton: UIButton!
     
+    var docRef: DocumentReference!
+    
+    
+    
+    @IBOutlet weak var successMessage: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setUpElements()
 
         // Do any additional setup after loading the view.
-        
+        docRef = Firestore.firestore().document("users/information")
        
+    }
+    
+    func setUpElements(){
+        //hide error Label
+        successMessage.alpha = 0
     }
     
 
@@ -73,26 +86,29 @@ class EditProfileViewController: UIViewController {
         
         
         
-        let website = websiteTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let phone = PhoneTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let address = AddressTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let city = CityTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let state = StateTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let zipcode = ZipCodeTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        let gps = GpsTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            
-            let db = Firestore.firestore()
-            let user = Auth.auth().currentUser
-            let uid = user?.uid ?? ""
+        guard let website = websiteTextField.text, !website.isEmpty else { return }
+        guard let phone = PhoneTextField.text, !phone.isEmpty else { return }
+        guard let address = AddressTextField.text, !address.isEmpty else { return }
+        guard let city = CityTextField.text, !city.isEmpty else { return }
+        guard let state = StateTextField.text, !state.isEmpty else { return }
+        guard let zipcode = ZipCodeTextField.text, !zipcode.isEmpty else { return }
+        guard let gps = GpsTextField.text, !gps.isEmpty else { return }
         
-            let ref = db.collection("users").document("infos")
+        let dataToSave: [String: Any] = ["website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode, "gps": gps ]
         
-        ref.setData(["uid": uid, "website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode, "gps": gps ]) { error in
-            
+        docRef.setData(dataToSave) {(error) in
             if let error = error {
-                print(error.localizedDescription)
+                print("oups!: \(error.localizedDescription)")
+            }else {
+                self.showError("data has been saved!")
             }
         }
+        
+        }
+    
+    func showError(_ message:String) {
+        successMessage.text = message
+        successMessage.alpha = 1
     }
 }
 
