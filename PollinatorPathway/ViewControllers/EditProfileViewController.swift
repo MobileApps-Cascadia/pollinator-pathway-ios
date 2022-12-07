@@ -9,6 +9,7 @@ import UIKit
 import Firebase
 import FirebaseCore
 import FirebaseFirestore
+import FirebaseAuth
 
 class EditProfileViewController: UIViewController {
     
@@ -83,7 +84,7 @@ class EditProfileViewController: UIViewController {
     @IBAction func SubmitButtonTapped(_ sender: Any) {
         
         
-        
+        guard let userID = Auth.auth().currentUser?.uid else { return }
         guard let website = websiteTextField.text, !website.isEmpty else { return }
         guard let phone = PhoneTextField.text, !phone.isEmpty else { return }
         guard let address = AddressTextField.text, !address.isEmpty else { return }
@@ -92,7 +93,7 @@ class EditProfileViewController: UIViewController {
         guard let zipcode = ZipCodeTextField.text, !zipcode.isEmpty else { return }
         guard let gps = GpsTextField.text, !gps.isEmpty else { return }
         
-        let dataToSave: [String: Any] = ["website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode, "gps": gps ]
+        let dataToSave: [String: Any] = ["uid": userID,  "website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode, "gps": gps ]
         
         docRef.setData(dataToSave) {(error) in
             if let error = error {
