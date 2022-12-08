@@ -3,8 +3,6 @@
 //  PollinatorPathway
 //
 //  Created by Student Account on 11/28/22.
-//
-
 import UIKit
 import Firebase
 import FirebaseCore
@@ -69,8 +67,6 @@ class EditProfileViewController: UIViewController {
         //hide error Label
         successMessage.alpha = 0
     }
-    
-
     /*
     // MARK: - Navigation
 
