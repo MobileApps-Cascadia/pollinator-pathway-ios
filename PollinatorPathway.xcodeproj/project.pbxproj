@@ -181,6 +181,10 @@
 		3F2DB5742909E3690013A056 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3F539BCE29085EE70066F841 /* Scanner VC.swift */,
+				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
+				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
+				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
 				3F941B122818A01C00D9A8B2 /* Existing User VC.swift */,
 				3F2DB5702909E33A0013A056 /* SignUpViewController.swift */,
 				3FB6CEDD292EEE780060245A /* ForumVC.swift */,
@@ -188,6 +192,8 @@
 				3FB6CEE3293ECD700060245A /* YoutubeVC.swift */,
 				3FB6CEE5293ECFA70060245A /* TwitterVC.swift */,
 				3FB6CEE7293ECFFE0060245A /* FacebookVC.swift */,
+				3FEC49B4293532420028D448 /* EditProfileViewController.swift */,
+				446FC2D6293EE30F00E2BD97 /* Plantings */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				3FFF6445280CAD0100030ABD /* PollinatorPathway */,
+				3F2EA15F2909F260006520A3 /* Helpers */,
+				446FC2D5293EE2C800E2BD97 /* Images */,
 				3FFF645C280CAD0600030ABD /* PollinatorPathwayTests */,
 				3FFF6467280CAD0600030ABD /* PollinatorPathwayUITests */,
 				3FFF6444280CAD0100030ABD /* Products */,
@@ -224,27 +232,11 @@
 		3FFF6445280CAD0100030ABD /* PollinatorPathway */ = {
 			isa = PBXGroup;
 			children = (
-				3F2EA15F2909F260006520A3 /* Helpers */,
+				3F2DB5742909E3690013A056 /* ViewControllers */,
 				3FFF6446280CAD0100030ABD /* AppDelegate.swift */,
 				3FFF6448280CAD0100030ABD /* SceneDelegate.swift */,
-				3F2DB5742909E3690013A056 /* ViewControllers */,
-				3F539BCE29085EE70066F841 /* Scanner VC.swift */,
 				3FFF644C280CAD0100030ABD /* Main.storyboard */,
-				3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */,
-				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
-				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
-				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
-				442ECECA28E63B8C00869252 /* Planting VC.swift */,
 				3FFF644F280CAD0500030ABD /* Assets.xcassets */,
-				44D6872428FDDA7400A669C5 /* bee1_2.png */,
-				44D6873028FDDC7000A669C5 /* bee2_2.png */,
-				44D6872728FDDA7400A669C5 /* bee2_1.PNG */,
-				44D6872028FDDA7400A669C5 /* bee3_2.png */,
-				44D6872628FDDA7400A669C5 /* bee4_2png.png */,
-				44D6872328FDDA7400A669C5 /* butterfly1_2.png */,
-				44D6872128FDDA7400A669C5 /* butterfly3_2.png */,
-				3F0C66372913427B007B82C7 /* emblem.png */,
-				44D6872228FDDA7400A669C5 /* hummingbird1_2.psd */,
 				3FFF6451280CAD0500030ABD /* LaunchScreen.storyboard */,
 				3FFF6454280CAD0500030ABD /* Info.plist */,
 				3F2EA162290B470C006520A3 /* GoogleService-Info.plist */,
@@ -268,6 +260,31 @@
 				3FFF646A280CAD0600030ABD /* Info.plist */,
 			);
 			path = PollinatorPathwayUITests;
+			sourceTree = "<group>";
+		};
+		446FC2D5293EE2C800E2BD97 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				44D6872428FDDA7400A669C5 /* bee1_2.png */,
+				44D6873028FDDC7000A669C5 /* bee2_2.png */,
+				44D6872728FDDA7400A669C5 /* bee2_1.PNG */,
+				44D6872028FDDA7400A669C5 /* bee3_2.png */,
+				44D6872628FDDA7400A669C5 /* bee4_2png.png */,
+				44D6872328FDDA7400A669C5 /* butterfly1_2.png */,
+				44D6872128FDDA7400A669C5 /* butterfly3_2.png */,
+				3F0C66372913427B007B82C7 /* emblem.png */,
+				44D6872228FDDA7400A669C5 /* hummingbird1_2.psd */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		446FC2D6293EE30F00E2BD97 /* Plantings */ = {
+			isa = PBXGroup;
+			children = (
+				442ECECA28E63B8C00869252 /* Planting VC.swift */,
+				3FAC4AC7284558FB00404C2E /* PlantingsTableViewCell.swift */,
+			);
+			path = Plantings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
