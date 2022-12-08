@@ -31,6 +31,16 @@ class Live_Map_VC: UIViewController {
         testChurch.title = "Test Church 1"
         testChurch.coordinate = CLLocationCoordinate2D(latitude: 47.7540, longitude: -122.2107)
         mapView.addAnnotation(testChurch)
+        
+        let testBusiness = MKPointAnnotation()
+        testBusiness.title = "Local Business"
+        testBusiness.coordinate = CLLocationCoordinate2D(latitude: 47.77, longitude: -122.2200)
+        mapView.addAnnotation(testBusiness)
+        
+        let testCommCtr = MKPointAnnotation()
+        testCommCtr.title = "Local Community Center"
+        testCommCtr.coordinate = CLLocationCoordinate2D(latitude: 47.74, longitude: -122.1810)
+        mapView.addAnnotation(testCommCtr)
     }
 }
     private extension MKMapView {
