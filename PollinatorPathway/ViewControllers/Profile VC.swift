@@ -30,8 +30,11 @@ class ProfileVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     override func viewDidLoad() {
 
     super.viewDidLoad()
-
+    title = "Profile"
+        
     }
+    
+    
     @IBAction func close() {
         dismiss(animated: true, completion: nil)
     }

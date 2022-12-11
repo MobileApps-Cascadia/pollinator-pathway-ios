@@ -50,6 +50,7 @@
 		3FB6CEE4293ECD700060245A /* YoutubeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEE3293ECD700060245A /* YoutubeVC.swift */; };
 		3FB6CEE6293ECFA70060245A /* TwitterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEE5293ECFA70060245A /* TwitterVC.swift */; };
 		3FB6CEE8293ECFFE0060245A /* FacebookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB6CEE7293ECFFE0060245A /* FacebookVC.swift */; };
+		3FD8A4C829425CC100B309B4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD8A4C729425CC100B309B4 /* EditProfileViewController.swift */; };
 		3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6446280CAD0100030ABD /* AppDelegate.swift */; };
 		3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFF6448280CAD0100030ABD /* SceneDelegate.swift */; };
 		3FFF644E280CAD0100030ABD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FFF644C280CAD0100030ABD /* Main.storyboard */; };
@@ -102,6 +103,7 @@
 		3FB6CEE3293ECD700060245A /* YoutubeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVC.swift; sourceTree = "<group>"; };
 		3FB6CEE5293ECFA70060245A /* TwitterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterVC.swift; sourceTree = "<group>"; };
 		3FB6CEE7293ECFFE0060245A /* FacebookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookVC.swift; sourceTree = "<group>"; };
+		3FD8A4C729425CC100B309B4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		3FFF6443280CAD0100030ABD /* PollinatorPathway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PollinatorPathway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FFF6446280CAD0100030ABD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FFF6448280CAD0100030ABD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				3F539BCE29085EE70066F841 /* Scanner VC.swift */,
+				3FD8A4C729425CC100B309B4 /* EditProfileViewController.swift */,
 				3F941B102818A00000D9A8B2 /* New User Setup VC.swift */,
 				3F941B142818A02D00D9A8B2 /* Live Map VC.swift */,
 				3FAC4A44283DA01200404C2E /* Profile VC.swift */,
@@ -192,7 +195,6 @@
 				3FB6CEE3293ECD700060245A /* YoutubeVC.swift */,
 				3FB6CEE5293ECFA70060245A /* TwitterVC.swift */,
 				3FB6CEE7293ECFFE0060245A /* FacebookVC.swift */,
-				3FEC49B4293532420028D448 /* EditProfileViewController.swift */,
 				446FC2D6293EE30F00E2BD97 /* Plantings */,
 			);
 			path = ViewControllers;
@@ -459,7 +461,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FEC49B5293532420028D448 /* EditProfileViewController.swift in Sources */,
 				3F539BCF29085EE70066F841 /* Scanner VC.swift in Sources */,
 				3FAC4AC8284558FB00404C2E /* PlantingsTableViewCell.swift in Sources */,
 				3F941B112818A00000D9A8B2 /* New User Setup VC.swift in Sources */,
@@ -468,6 +469,7 @@
 				3FFF6447280CAD0100030ABD /* AppDelegate.swift in Sources */,
 				3FB6CEE6293ECFA70060245A /* TwitterVC.swift in Sources */,
 				3FB6CEE2293E78170060245A /* RedditVC.swift in Sources */,
+				3FD8A4C829425CC100B309B4 /* EditProfileViewController.swift in Sources */,
 				3F941B152818A02D00D9A8B2 /* Live Map VC.swift in Sources */,
 				3FFF6449280CAD0100030ABD /* SceneDelegate.swift in Sources */,
 				3F2DB5712909E33A0013A056 /* SignUpViewController.swift in Sources */,

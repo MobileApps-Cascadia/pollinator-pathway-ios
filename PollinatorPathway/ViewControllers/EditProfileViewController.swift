@@ -12,20 +12,13 @@ import FirebaseAuth
 class EditProfileViewController: UIViewController {
     
     
-    @IBOutlet weak var websiteTextField: UITextField!
+    @IBOutlet weak var OrganizationTextField: UITextField!
     
     
-    @IBOutlet weak var AddEmailTextField: UITextField!
+    @IBOutlet weak var WebsiteTextField: UITextField!
     
     
     @IBOutlet weak var PhoneTextField: UITextField!
-    
-    
-    
-    @IBOutlet weak var FacebookTextField: UITextField!
-    
-    
-    @IBOutlet weak var InstagramTextField: UITextField!
     
     
     @IBOutlet weak var AddressTextField: UITextField!
@@ -40,11 +33,7 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var ZipCodeTextField: UITextField!
     
     
-    
-    @IBOutlet weak var GpsTextField: UITextField!
-    
-    
-    @IBOutlet weak var SubmitButton: UIButton!
+    @IBOutlet weak var SaveButton: UIButton!
     
     var docRef: DocumentReference!
     
@@ -55,6 +44,7 @@ class EditProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Edit Profile"
         
         setUpElements()
 
@@ -80,16 +70,15 @@ class EditProfileViewController: UIViewController {
     @IBAction func SubmitButtonTapped(_ sender: Any) {
         
         guard let userID = Auth.auth().currentUser?.uid else { return }
-        guard let website = websiteTextField.text, !website.isEmpty else { return }
-        guard let phone = PhoneTextField.text, !phone.isEmpty else { return }
+        guard let website = WebsiteTextField.text, !website.isEmpty else { return }
+        guard let phone = PhoneTextField.text, !website.isEmpty else { return }
         guard let address = AddressTextField.text, !address.isEmpty else { return }
         guard let city = CityTextField.text, !city.isEmpty else { return }
         guard let state = StateTextField.text, !state.isEmpty else { return }
         guard let zipcode = ZipCodeTextField.text, !zipcode.isEmpty else { return }
-        guard let gps = GpsTextField.text, !gps.isEmpty else { return }
         
         
-        let dataToSave: [String: Any] = ["uid": userID,  "website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode, "gps": gps ]
+        let dataToSave: [String: Any] = ["uid": userID,  "website": website, "phone": phone, "address": address, "city": city, "state": state, "zipcode": zipcode]
         
         docRef.setData(dataToSave) {(error) in
             if let error = error {
