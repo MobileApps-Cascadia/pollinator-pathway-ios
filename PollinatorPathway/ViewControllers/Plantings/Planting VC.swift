@@ -1,13 +1,17 @@
 //
-//  New User Setup VC.swift
+//  Planting VC.swift
 //  PollinatorPathway
 //
-//  Created by Student Account on 4/26/22.
+//  Created by Andrea Harrison on 9/29/22.
 //
 
 import UIKit
 
-class New_User_Setup_VC: UIViewController {
+class Planting_VC: UIViewController {
+    
+    @IBAction func close() {
+        dismiss(animated: true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +28,6 @@ class New_User_Setup_VC: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    
     */
 
 }
